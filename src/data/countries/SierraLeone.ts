@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const SierraLeone = {
-  type: "Feature",
-  id: "SLE",
-  properties: { name: "Sierra Leone" },
+  type: 'Feature',
+  id: 'SLE',
+  properties: { name: 'Sierra Leone' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [-11.438779, 6.785917],
@@ -29,6 +31,6 @@ export const SierraLeone = {
         [-11.199802, 7.105846],
         [-11.438779, 6.785917],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Fiji = {
-  type: "Feature",
-  id: "FJI",
-  properties: { name: "Fiji" },
+  type: 'Feature',
+  id: 'FJI',
+  properties: { name: 'Fiji' },
   geometry: {
-    type: "MultiPolygon",
+    type: 'MultiPolygon',
     coordinates: [
       [
         [
@@ -39,6 +41,6 @@ export const Fiji = {
           [-179.917369, -16.501783],
         ],
       ],
-    ],
+    ] as LatLngExpression[][][],
   },
-}
+};

@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Mozambique = {
-  type: "Feature",
-  id: "MOZ",
-  properties: { name: "Mozambique" },
+  type: 'Feature',
+  id: 'MOZ',
+  properties: { name: 'Mozambique' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [34.559989, -11.52002],
@@ -84,6 +86,6 @@ export const Mozambique = {
         [34.280006, -12.280025],
         [34.559989, -11.52002],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

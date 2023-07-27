@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Bolivia = {
-  type: "Feature",
-  id: "BOL",
-  properties: { name: "Bolivia" },
+  type: 'Feature',
+  id: 'BOL',
+  properties: { name: 'Bolivia' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [-62.846468, -22.034985],
@@ -67,6 +69,6 @@ export const Bolivia = {
         [-62.685057, -22.249029],
         [-62.846468, -22.034985],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

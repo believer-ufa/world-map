@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const TheBahamas = {
-  type: "Feature",
-  id: "BHS",
-  properties: { name: "The Bahamas" },
+  type: 'Feature',
+  id: 'BHS',
+  properties: { name: 'The Bahamas' },
   geometry: {
-    type: "MultiPolygon",
+    type: 'MultiPolygon',
     coordinates: [
       [
         [
@@ -38,6 +40,6 @@ export const TheBahamas = {
           [-77, 26.59],
         ],
       ],
-    ],
+    ] as LatLngExpression[][][],
   },
-}
+};

@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Suriname = {
-  type: "Feature",
-  id: "SUR",
-  properties: { name: "Suriname" },
+  type: 'Feature',
+  id: 'SUR',
+  properties: { name: 'Suriname' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [-57.147436, 5.97315],
@@ -33,6 +35,6 @@ export const Suriname = {
         [-57.307246, 5.073567],
         [-57.147436, 5.97315],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

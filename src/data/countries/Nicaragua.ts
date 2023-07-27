@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Nicaragua = {
-  type: "Feature",
-  id: "NIC",
-  properties: { name: "Nicaragua" },
+  type: 'Feature',
+  id: 'NIC',
+  properties: { name: 'Nicaragua' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [-85.71254, 11.088445],
@@ -59,6 +61,6 @@ export const Nicaragua = {
         [-85.561852, 11.217119],
         [-85.71254, 11.088445],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

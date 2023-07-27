@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Zimbabwe = {
-  type: "Feature",
-  id: "ZWE",
-  properties: { name: "Zimbabwe" },
+  type: 'Feature',
+  id: 'ZWE',
+  properties: { name: 'Zimbabwe' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [31.191409, -22.25151],
@@ -44,6 +46,6 @@ export const Zimbabwe = {
         [32.244988, -21.116489],
         [31.191409, -22.25151],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Vietnam = {
-  type: "Feature",
-  id: "VNM",
-  properties: { name: "Vietnam" },
+  type: 'Feature',
+  id: 'VNM',
+  properties: { name: 'Vietnam' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [108.05018, 21.55238],
@@ -51,6 +53,6 @@ export const Vietnam = {
         [107.04342, 21.811899],
         [108.05018, 21.55238],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

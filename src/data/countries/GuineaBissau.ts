@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const GuineaBissau = {
-  type: "Feature",
-  id: "GNB",
-  properties: { name: "Guinea Bissau" },
+  type: 'Feature',
+  id: 'GNB',
+  properties: { name: 'Guinea Bissau' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [-15.130311, 11.040412],
@@ -26,6 +28,6 @@ export const GuineaBissau = {
         [-14.685687, 11.527824],
         [-15.130311, 11.040412],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

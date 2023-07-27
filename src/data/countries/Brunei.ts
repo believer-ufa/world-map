@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Brunei = {
-  type: "Feature",
-  id: "BRN",
-  properties: { name: "Brunei" },
+  type: 'Feature',
+  id: 'BRN',
+  properties: { name: 'Brunei' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [114.204017, 4.525874],
@@ -15,6 +17,6 @@ export const Brunei = {
         [114.659596, 4.007637],
         [114.204017, 4.525874],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

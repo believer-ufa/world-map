@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const FrenchGuiana = {
-  type: "Feature",
-  id: "GUF",
-  properties: { name: "French Guiana" },
+  type: 'Feature',
+  id: 'GUF',
+  properties: { name: 'French Guiana' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [-52.556425, 2.504705],
@@ -26,6 +28,6 @@ export const FrenchGuiana = {
         [-52.249338, 3.241094],
         [-52.556425, 2.504705],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

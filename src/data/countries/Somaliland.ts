@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Somaliland = {
-  type: "Feature",
-  id: "-99",
-  properties: { name: "Somaliland" },
+  type: 'Feature',
+  id: '-99',
+  properties: { name: 'Somaliland' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [48.93813, 9.451749],
@@ -31,6 +33,6 @@ export const Somaliland = {
         [48.938233, 9.9735],
         [48.93813, 9.451749],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

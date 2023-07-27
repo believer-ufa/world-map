@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Mauritania = {
-  type: "Feature",
-  id: "MRT",
-  properties: { name: "Mauritania" },
+  type: 'Feature',
+  id: 'MRT',
+  properties: { name: 'Mauritania' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [-12.17075, 14.616834],
@@ -46,6 +48,6 @@ export const Mauritania = {
         [-11.834208, 14.799097],
         [-12.17075, 14.616834],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

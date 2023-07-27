@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Israel = {
-  type: "Feature",
-  id: "ISR",
-  properties: { name: "Israel" },
+  type: 'Feature',
+  id: 'ISR',
+  properties: { name: 'Israel' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [35.719918, 32.709192],
@@ -30,6 +32,6 @@ export const Israel = {
         [35.700798, 32.716014],
         [35.719918, 32.709192],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

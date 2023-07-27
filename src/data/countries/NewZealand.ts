@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const NewZealand = {
-  type: "Feature",
-  id: "NZL",
-  properties: { name: "New Zealand" },
+  type: 'Feature',
+  id: 'NZL',
+  properties: { name: 'New Zealand' },
   geometry: {
-    type: "MultiPolygon",
+    type: 'MultiPolygon',
     coordinates: [
       [
         [
@@ -79,6 +81,6 @@ export const NewZealand = {
           [174.612009, -36.156397],
         ],
       ],
-    ],
+    ] as LatLngExpression[][][],
   },
-}
+};

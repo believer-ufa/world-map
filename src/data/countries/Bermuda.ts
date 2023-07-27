@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Bermuda = {
-  type: "Feature",
-  id: "BMU",
-  properties: { name: "Bermuda" },
+  type: 'Feature',
+  id: 'BMU',
+  properties: { name: 'Bermuda' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [-64.7799734332998, 32.3072000581802],
@@ -93,6 +95,6 @@ export const Bermuda = {
         [-64.768738200563, 32.3088369816572],
         [-64.7799734332998, 32.3072000581802],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

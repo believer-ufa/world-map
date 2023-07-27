@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Azerbaijan = {
-  type: "Feature",
-  id: "AZE",
-  properties: { name: "Azerbaijan" },
+  type: 'Feature',
+  id: 'AZE',
+  properties: { name: 'Azerbaijan' },
   geometry: {
-    type: "MultiPolygon",
+    type: 'MultiPolygon',
     coordinates: [
       [
         [
@@ -57,6 +59,6 @@ export const Azerbaijan = {
           [47.373315, 41.219732],
         ],
       ],
-    ],
+    ] as LatLngExpression[][][],
   },
-}
+};

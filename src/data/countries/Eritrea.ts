@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Eritrea = {
-  type: "Feature",
-  id: "ERI",
-  properties: { name: "Eritrea" },
+  type: 'Feature',
+  id: 'ERI',
+  properties: { name: 'Eritrea' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [42.35156, 12.54223],
@@ -35,6 +37,6 @@ export const Eritrea = {
         [42.779642, 12.455416],
         [42.35156, 12.54223],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

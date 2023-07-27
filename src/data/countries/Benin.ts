@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Benin = {
-  type: "Feature",
-  id: "BEN",
-  properties: { name: "Benin" },
+  type: 'Feature',
+  id: 'BEN',
+  properties: { name: 'Benin' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [2.691702, 6.258817],
@@ -32,6 +34,6 @@ export const Benin = {
         [2.749063, 7.870734],
         [2.691702, 6.258817],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

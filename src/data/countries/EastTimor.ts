@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const EastTimor = {
-  type: "Feature",
-  id: "TLS",
-  properties: { name: "East Timor" },
+  type: 'Feature',
+  id: 'TLS',
+  properties: { name: 'East Timor' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [124.968682, -8.89279],
@@ -18,6 +20,6 @@ export const EastTimor = {
         [125.07002, -9.089987],
         [124.968682, -8.89279],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

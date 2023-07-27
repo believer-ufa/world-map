@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Cameroon = {
-  type: "Feature",
-  id: "CMR",
-  properties: { name: "Cameroon" },
+  type: 'Feature',
+  id: 'CMR',
+  properties: { name: 'Cameroon' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [13.075822, 2.267097],
@@ -68,6 +70,6 @@ export const Cameroon = {
         [14.337813, 2.227875],
         [13.075822, 2.267097],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const NewCaledonia = {
-  type: "Feature",
-  id: "NCL",
-  properties: { name: "New Caledonia" },
+  type: 'Feature',
+  id: 'NCL',
+  properties: { name: 'New Caledonia' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [165.77999, -21.080005],
@@ -20,6 +22,6 @@ export const NewCaledonia = {
         [165.460009, -20.800022],
         [165.77999, -21.080005],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

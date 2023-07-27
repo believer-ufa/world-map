@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const UnitedRepublicOfTanzania = {
-  type: "Feature",
-  id: "TZA",
-  properties: { name: "United Republic of Tanzania" },
+  type: 'Feature',
+  id: 'TZA',
+  properties: { name: 'United Republic of Tanzania' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [33.903711, -0.95],
@@ -56,6 +58,6 @@ export const UnitedRepublicOfTanzania = {
         [31.86617, -1.02736],
         [33.903711, -0.95],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

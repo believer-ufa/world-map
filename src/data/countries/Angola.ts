@@ -1,11 +1,11 @@
-import { LatLngExpression } from "leaflet";
+import { LatLngExpression } from 'leaflet';
 
 export const Angola = {
-  type: "Feature",
-  id: "AGO",
-  properties: { name: "Angola" },
+  type: 'Feature',
+  id: 'AGO',
+  properties: { name: 'Angola' },
   geometry: {
-    type: "MultiPolygon",
+    type: 'MultiPolygon',
     coordinates: [
       [
         [

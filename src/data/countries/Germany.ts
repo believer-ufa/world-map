@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Germany = {
-  type: "Feature",
-  id: "DEU",
-  properties: { name: "Germany" },
+  type: 'Feature',
+  id: 'DEU',
+  properties: { name: 'Germany' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [9.921906, 54.983104],
@@ -65,6 +67,6 @@ export const Germany = {
         [9.282049, 54.830865],
         [9.921906, 54.983104],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

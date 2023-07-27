@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Burundi = {
-  type: "Feature",
-  id: "BDI",
-  properties: { name: "Burundi" },
+  type: 'Feature',
+  id: 'BDI',
+  properties: { name: 'Burundi' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [29.339998, -4.499983],
@@ -20,6 +22,6 @@ export const Burundi = {
         [29.753512, -4.452389],
         [29.339998, -4.499983],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

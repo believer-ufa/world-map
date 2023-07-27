@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Liberia = {
-  type: "Feature",
-  id: "LBR",
-  properties: { name: "Liberia" },
+  type: 'Feature',
+  id: 'LBR',
+  properties: { name: 'Liberia' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [-7.712159, 4.364566],
@@ -34,6 +36,6 @@ export const Liberia = {
         [-7.635368, 5.188159],
         [-7.712159, 4.364566],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

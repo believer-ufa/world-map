@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Kuwait = {
-  type: "Feature",
-  id: "KWT",
-  properties: { name: "Kuwait" },
+  type: 'Feature',
+  id: 'KWT',
+  properties: { name: 'Kuwait' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [47.974519, 29.975819],
@@ -16,6 +18,6 @@ export const Kuwait = {
         [47.302622, 30.05907],
         [47.974519, 29.975819],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

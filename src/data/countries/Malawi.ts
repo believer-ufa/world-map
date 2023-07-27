@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Malawi = {
-  type: "Feature",
-  id: "MWI",
-  properties: { name: "Malawi" },
+  type: 'Feature',
+  id: 'MWI',
+  properties: { name: 'Malawi' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [34.559989, -11.52002],
@@ -35,6 +37,6 @@ export const Malawi = {
         [34.280006, -10.16],
         [34.559989, -11.52002],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

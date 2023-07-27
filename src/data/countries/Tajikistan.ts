@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Tajikistan = {
-  type: "Feature",
-  id: "TJK",
-  properties: { name: "Tajikistan" },
+  type: 'Feature',
+  id: 'TJK',
+  properties: { name: 'Tajikistan' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [71.014198, 40.244366],
@@ -48,6 +50,6 @@ export const Tajikistan = {
         [70.601407, 40.218527],
         [71.014198, 40.244366],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

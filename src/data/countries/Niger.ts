@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Niger = {
-  type: "Feature",
-  id: "NER",
-  properties: { name: "Niger" },
+  type: 'Feature',
+  id: 'NER',
+  properties: { name: 'Niger' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [2.154474, 11.94015],
@@ -65,6 +67,6 @@ export const Niger = {
         [2.490164, 12.233052],
         [2.154474, 11.94015],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

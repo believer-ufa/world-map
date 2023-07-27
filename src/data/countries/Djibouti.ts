@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Djibouti = {
-  type: "Feature",
-  id: "DJI",
-  properties: { name: "Djibouti" },
+  type: 'Feature',
+  id: 'DJI',
+  properties: { name: 'Djibouti' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [43.081226, 12.699639],
@@ -22,6 +24,6 @@ export const Djibouti = {
         [42.779642, 12.455416],
         [43.081226, 12.699639],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

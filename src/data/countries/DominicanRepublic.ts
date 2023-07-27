@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const DominicanRepublic = {
-  type: "Feature",
-  id: "DOM",
-  properties: { name: "Dominican Republic" },
+  type: 'Feature',
+  id: 'DOM',
+  properties: { name: 'Dominican Republic' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [-71.712361, 19.714456],
@@ -33,6 +35,6 @@ export const DominicanRepublic = {
         [-71.624873, 19.169838],
         [-71.712361, 19.714456],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

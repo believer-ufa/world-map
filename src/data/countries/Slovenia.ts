@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Slovenia = {
-  type: "Feature",
-  id: "SVN",
-  properties: { name: "Slovenia" },
+  type: 'Feature',
+  id: 'SVN',
+  properties: { name: 'Slovenia' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [13.806475, 46.509306],
@@ -25,6 +27,6 @@ export const Slovenia = {
         [13.69811, 46.016778],
         [13.806475, 46.509306],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

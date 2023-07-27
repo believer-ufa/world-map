@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const WestBank = {
-  type: "Feature",
-  id: "PSE",
-  properties: { name: "West Bank" },
+  type: 'Feature',
+  id: 'PSE',
+  properties: { name: 'West Bank' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [35.545665, 32.393992],
@@ -16,6 +18,6 @@ export const WestBank = {
         [35.18393, 32.532511],
         [35.545665, 32.393992],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

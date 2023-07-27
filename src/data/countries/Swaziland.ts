@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Swaziland = {
-  type: "Feature",
-  id: "SWZ",
-  properties: { name: "Swaziland" },
+  type: 'Feature',
+  id: 'SWZ',
+  properties: { name: 'Swaziland' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [32.071665, -26.73382],
@@ -18,7 +20,6 @@ export const Swaziland = {
         [31.985779, -26.29178],
         [32.071665, -26.73382],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-
-}
+};

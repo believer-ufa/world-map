@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const ElSalvador = {
-  type: "Feature",
-  id: "SLV",
-  properties: { name: "El Salvador" },
+  type: 'Feature',
+  id: 'SLV',
+  properties: { name: 'El Salvador' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [-87.793111, 13.38448],
@@ -27,6 +29,6 @@ export const ElSalvador = {
         [-87.723503, 13.78505],
         [-87.793111, 13.38448],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

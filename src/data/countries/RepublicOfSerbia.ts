@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const RepublicOfSerbia = {
-  type: "Feature",
-  id: "SRB",
-  properties: { name: "Republic of Serbia" },
+  type: 'Feature',
+  id: 'SRB',
+  properties: { name: 'Republic of Serbia' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [20.874313, 45.416375],
@@ -53,6 +55,6 @@ export const RepublicOfSerbia = {
         [20.762175, 45.734573],
         [20.874313, 45.416375],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

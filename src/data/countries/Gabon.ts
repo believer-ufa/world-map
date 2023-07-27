@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Gabon = {
-  type: "Feature",
-  id: "GAB",
-  properties: { name: "Gabon" },
+  type: 'Feature',
+  id: 'GAB',
+  properties: { name: 'Gabon' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [11.093773, -3.978827],
@@ -38,6 +40,6 @@ export const Gabon = {
         [11.855122, -3.426871],
         [11.093773, -3.978827],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

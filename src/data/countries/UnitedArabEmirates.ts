@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const UnitedArabEmirates = {
-  type: "Feature",
-  id: "ARE",
-  properties: { name: "United Arab Emirates" },
+  type: 'Feature',
+  id: 'ARE',
+  properties: { name: 'United Arab Emirates' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [51.579519, 24.245497],
@@ -29,6 +31,6 @@ export const UnitedArabEmirates = {
         [51.617708, 24.014219],
         [51.579519, 24.245497],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

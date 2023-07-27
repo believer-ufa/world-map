@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Togo = {
-  type: "Feature",
-  id: "TGO",
-  properties: { name: "Togo" },
+  type: 'Feature',
+  id: 'TGO',
+  properties: { name: 'Togo' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [1.865241, 6.142158],
@@ -26,7 +28,6 @@ export const Togo = {
         [1.618951, 6.832038],
         [1.865241, 6.142158],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-
-}
+};

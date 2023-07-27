@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const WesternSahara = {
-  type: "Feature",
-  id: "ESH",
-  properties: { name: "Western Sahara" },
+  type: 'Feature',
+  id: 'ESH',
+  properties: { name: 'Western Sahara' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [-8.794884, 27.120696],
@@ -35,6 +37,6 @@ export const WesternSahara = {
         [-9.413037, 27.088476],
         [-8.794884, 27.120696],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

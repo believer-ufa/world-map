@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const FalklandIslands = {
-  type: "Feature",
-  id: "FLK",
-  properties: { name: "Falkland Islands" },
+  type: 'Feature',
+  id: 'FLK',
+  properties: { name: 'Falkland Islands' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [-61.2, -51.85],
@@ -17,6 +19,6 @@ export const FalklandIslands = {
         [-60.7, -52.3],
         [-61.2, -51.85],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

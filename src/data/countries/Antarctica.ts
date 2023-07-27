@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Antarctica = {
-  type: "Feature",
-  id: "ATA",
-  properties: { name: "Antarctica" },
+  type: 'Feature',
+  id: 'ATA',
+  properties: { name: 'Antarctica' },
   geometry: {
-    type: "MultiPolygon",
+    type: 'MultiPolygon',
     coordinates: [
       [
         [
@@ -693,6 +695,6 @@ export const Antarctica = {
           [-58.614143, -64.152467],
         ],
       ],
-    ],
+    ] as LatLngExpression[][][],
   },
-}
+};

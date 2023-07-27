@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const IvoryCoast = {
-  type: "Feature",
-  id: "CIV",
-  properties: { name: "Ivory Coast" },
+  type: 'Feature',
+  id: 'CIV',
+  properties: { name: 'Ivory Coast' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [-2.856125, 4.994476],
@@ -53,6 +55,6 @@ export const IvoryCoast = {
         [-2.810701, 5.389051],
         [-2.856125, 4.994476],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

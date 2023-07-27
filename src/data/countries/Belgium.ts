@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Belgium = {
-  type: "Feature",
-  id: "BEL",
-  properties: { name: "Belgium" },
+  type: 'Feature',
+  id: 'BEL',
+  properties: { name: 'Belgium' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [3.314971, 51.345781],
@@ -22,6 +24,6 @@ export const Belgium = {
         [2.513573, 51.148506],
         [3.314971, 51.345781],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

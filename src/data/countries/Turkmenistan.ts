@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Turkmenistan = {
-  type: "Feature",
-  id: "TKM",
-  properties: { name: "Turkmenistan" },
+  type: 'Feature',
+  id: 'TKM',
+  properties: { name: 'Turkmenistan' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [61.210817, 35.650072],
@@ -61,6 +63,6 @@ export const Turkmenistan = {
         [62.230651, 35.270664],
         [61.210817, 35.650072],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

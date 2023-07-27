@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Russia = {
-  type: "Feature",
-  id: "RUS",
-  properties: { name: "Russia" },
+  type: 'Feature',
+  id: 'RUS',
+  properties: { name: 'Russia' },
   geometry: {
-    type: "MultiPolygon",
+    type: 'MultiPolygon',
     coordinates: [
       [
         [
@@ -655,6 +657,6 @@ export const Russia = {
           [99.93976, 78.88094],
         ],
       ],
-    ],
+    ] as LatLngExpression[][][],
   },
-}
+};

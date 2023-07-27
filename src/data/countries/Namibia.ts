@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Namibia = {
-  type: "Feature",
-  id: "NAM",
-  properties: { name: "Namibia" },
+  type: 'Feature',
+  id: 'NAM',
+  properties: { name: 'Namibia' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [16.344977, -28.576705],
@@ -51,6 +53,6 @@ export const Namibia = {
         [16.824017, -28.082162],
         [16.344977, -28.576705],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Haiti = {
-  type: "Feature",
-  id: "HTI",
-  properties: { name: "Haiti" },
+  type: 'Feature',
+  id: 'HTI',
+  properties: { name: 'Haiti' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [-73.189791, 19.915684],
@@ -28,6 +30,6 @@ export const Haiti = {
         [-73.415022, 19.639551],
         [-73.189791, 19.915684],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

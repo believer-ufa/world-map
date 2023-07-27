@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Kosovo = {
-  type: "Feature",
-  id: "CS-KM",
-  properties: { name: "Kosovo" },
+  type: 'Feature',
+  id: 'CS-KM',
+  properties: { name: 'Kosovo' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [20.76216, 42.05186],
@@ -28,6 +30,6 @@ export const Kosovo = {
         [21.3527, 42.2068],
         [20.76216, 42.05186],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

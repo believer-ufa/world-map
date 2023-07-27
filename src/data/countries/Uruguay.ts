@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Uruguay = {
-  type: "Feature",
-  id: "URY",
-  properties: { name: "Uruguay" },
+  type: 'Feature',
+  id: 'URY',
+  properties: { name: 'Uruguay' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [-57.625133, -30.216295],
@@ -28,6 +30,6 @@ export const Uruguay = {
         [-57.874937, -31.016556],
         [-57.625133, -30.216295],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const SolomonIslands = {
-  type: "Feature",
-  id: "SLB",
-  properties: { name: "Solomon Islands" },
+  type: 'Feature',
+  id: 'SLB',
+  properties: { name: 'Solomon Islands' },
   geometry: {
-    type: "MultiPolygon",
+    type: 'MultiPolygon',
     coordinates: [
       [
         [
@@ -62,6 +64,6 @@ export const SolomonIslands = {
           [157.538426, -7.34782],
         ],
       ],
-    ],
+    ] as LatLngExpression[][][],
   },
-}
+};

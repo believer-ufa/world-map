@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const FrenchSouthernAndAntarcticLands = {
-  type: "Feature",
-  id: "ATF",
-  properties: { name: "French Southern and Antarctic Lands" },
+  type: 'Feature',
+  id: 'ATF',
+  properties: { name: 'French Southern and Antarctic Lands' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [68.935, -48.625],
@@ -16,6 +18,6 @@ export const FrenchSouthernAndAntarcticLands = {
         [68.8675, -48.83],
         [68.935, -48.625],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

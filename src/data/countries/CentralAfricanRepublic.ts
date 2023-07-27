@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const CentralAfricanRepublic = {
-  type: "Feature",
-  id: "CAF",
-  properties: { name: "Central African Republic" },
+  type: 'Feature',
+  id: 'CAF',
+  properties: { name: 'Central African Republic' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [15.27946, 7.421925],
@@ -69,6 +71,6 @@ export const CentralAfricanRepublic = {
         [14.776545, 6.408498],
         [15.27946, 7.421925],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

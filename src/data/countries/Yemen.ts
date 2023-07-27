@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Yemen = {
-  type: "Feature",
-  id: "YEM",
-  properties: { name: "Yemen" },
+  type: 'Feature',
+  id: 'YEM',
+  properties: { name: 'Yemen' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [53.108573, 16.651051],
@@ -51,6 +53,6 @@ export const Yemen = {
         [52.782184, 17.349742],
         [53.108573, 16.651051],
       ],
-    ],
+    ] as LatLngExpression[][],
   },
-}
+};

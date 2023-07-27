@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const UnitedStatesOfAmerica = {
-  type: "Feature",
-  id: "USA",
-  properties: { name: "United States of America" },
+  type: 'Feature',
+  id: 'USA',
+  properties: { name: 'United States of America' },
   geometry: {
-    type: "MultiPolygon",
+    type: 'MultiPolygon',
     coordinates: [
       [
         [
@@ -487,7 +489,7 @@ export const UnitedStatesOfAmerica = {
           [-156.580825, 71.357764],
           [-155.06779, 71.147776],
         ],
-      ],
+      ] as LatLngExpression[][],
     ],
   },
-}
+};

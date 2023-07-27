@@ -1,9 +1,11 @@
+import { LatLngExpression } from 'leaflet';
+
 export const Vanuatu = {
-  type: "Feature",
-  id: "VUT",
-  properties: { name: "Vanuatu" },
+  type: 'Feature',
+  id: 'VUT',
+  properties: { name: 'Vanuatu' },
   geometry: {
-    type: "MultiPolygon",
+    type: 'MultiPolygon',
     coordinates: [
       [
         [
@@ -25,6 +27,6 @@ export const Vanuatu = {
           [167.107712, -14.93392],
         ],
       ],
-    ],
+    ] as LatLngExpression[][][],
   },
-}
+};
