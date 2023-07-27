@@ -1,11 +1,15 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import { useState, useMemo, useCallback, useEffect } from "react";
-import { Map, PathOptions } from "leaflet";
-import { MapContainer, Polygon, TileLayer } from "react-leaflet";
+import { useState, useMemo, useCallback, useEffect } from 'react';
 
-import "leaflet/dist/leaflet.css";
-import classes from "./App.module.scss";
-import { allCountries } from "./data/allCountries";
+import { Map, PathOptions } from 'leaflet';
+import { MapContainer, Polygon, TileLayer } from 'react-leaflet';
+
+import 'leaflet/dist/leaflet.css';
+
+import { swapCoords } from '@/helpers/geo/swapCoords';
+
+import classes from './App.module.scss';
+
+import { allCountries } from './data/allCountries';
 
 // var myStyle = {
 //   fillColor: "grey",
@@ -50,29 +54,35 @@ import { allCountries } from "./data/allCountries";
 //   [51.52, -0.12],
 // ] as LatLngExpression[];
 
-const DisplayPosition = ({ map }: { map: Map }) => {
-  const [position, setPosition] = useState(() => map.getCenter())
+function DisplayPosition({ map }: { map: Map }) {
+  const [position, setPosition] = useState(() => map.getCenter());
 
   const onMove = useCallback(() => {
-    setPosition(map.getCenter())
-  }, [map])
+    setPosition(map.getCenter());
+  }, [map]);
 
   useEffect(() => {
-    map.on('move', onMove)
+    map.on('move', onMove);
     return () => {
-      map.off('move', onMove)
-    }
-  }, [map, onMove])
+      map.off('move', onMove);
+    };
+  }, [map, onMove]);
 
   return (
     <p>
-      latitude: {position.lat.toFixed(4)}, longitude: {position.lng.toFixed(4)}{' '}
+      latitude:
+      {' '}
+      {position.lat.toFixed(4)}
+      , longitude:
+      {' '}
+      {position.lng.toFixed(4)}
+      {' '}
     </p>
-  )
+  );
 }
 
-const App = () => {
-  const [map, setMap] = useState<Map | null>(null)
+function App() {
+  const [map, setMap] = useState<Map | null>(null);
 
   const countryOptions = useMemo(() => ({
     color: 'green',
@@ -86,31 +96,13 @@ const App = () => {
     opacity: 1,
   } as PathOptions), []);
 
-  const processCoords = (coordsArray: any) => {
-    if (Array.isArray(coordsArray)) {
-      return coordsArray.map((arr: any): any => {
-        if (Array.isArray(arr) ) {
-          if (Array.isArray(arr[0])) {
-            return processCoords(arr);
-          }
-
-          return [arr[1], arr[0]];
-        }
-
-        return arr;
-      });
-    }
-
-    return coordsArray;
-  }
-
   return (
     <div className={classes.appContainer}>
       {map ? <DisplayPosition map={map} /> : null}
       <MapContainer ref={setMap} className={classes.mapContainer} center={[30, 0]} zoom={3}>
         <TileLayer attribution="© OpenStreetMap" url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-        {allCountries.features.map(countryData => (
-          <Polygon pathOptions={countryOptions} positions={processCoords(countryData.geometry.coordinates)} />
+        {allCountries.features.map((countryData) => (
+          <Polygon pathOptions={countryOptions} positions={swapCoords(countryData.geometry.coordinates)} />
         ))}
       </MapContainer>
     </div>

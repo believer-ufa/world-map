@@ -1,11 +1,11 @@
-import { LatLngExpression } from "leaflet";
+import { LatLngExpression } from 'leaflet';
 
 export const Afghanistan = {
-  type: "Feature",
-  id: "AFG",
-  properties: { name: "Afghanistan" },
+  type: 'Feature',
+  id: 'AFG',
+  properties: { name: 'Afghanistan' },
   geometry: {
-    type: "Polygon",
+    type: 'Polygon',
     coordinates: [
       [
         [61.210817, 35.650072],
