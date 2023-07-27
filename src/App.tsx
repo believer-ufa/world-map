@@ -1,15 +1,12 @@
-import { useState, useMemo, useCallback, useEffect } from 'react';
-
+import { useState, useMemo } from 'react';
 import { Map, PathOptions } from 'leaflet';
 import { MapContainer, Polygon, TileLayer, Tooltip } from 'react-leaflet';
 
-import 'leaflet/dist/leaflet.css';
-
 import { swapCoords } from '@/helpers/geo/swapCoords';
+import { allCountries } from '@/data/allCountries';
+import { CoordsPanel } from '@/uikit/CoordsPanel';
 
 import classes from './App.module.scss';
-
-import { allCountries } from './data/allCountries';
 
 // var myStyle = {
 //   fillColor: "grey",
@@ -54,33 +51,6 @@ import { allCountries } from './data/allCountries';
 //   [51.52, -0.12],
 // ] as LatLngExpression[];
 
-function DisplayPosition({ map }: { map: Map }) {
-  const [position, setPosition] = useState(() => map.getCenter());
-
-  const onMove = useCallback(() => {
-    setPosition(map.getCenter());
-  }, [map]);
-
-  useEffect(() => {
-    map.on('move', onMove);
-    return () => {
-      map.off('move', onMove);
-    };
-  }, [map, onMove]);
-
-  return (
-    <p>
-      latitude:
-      {' '}
-      {position.lat.toFixed(4)}
-      , longitude:
-      {' '}
-      {position.lng.toFixed(4)}
-      {' '}
-    </p>
-  );
-}
-
 function App() {
   const [map, setMap] = useState<Map | null>(null);
 
@@ -98,9 +68,9 @@ function App() {
 
   return (
     <div className={classes.appContainer}>
-      {map ? <DisplayPosition map={map} /> : null}
       <MapContainer ref={setMap} className={classes.mapContainer} center={[30, 0]} zoom={3}>
         <TileLayer attribution="© OpenStreetMap" url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+        {map ? <CoordsPanel map={map} /> : null}
         {allCountries.features.map((countryData) => (
           <Polygon key={countryData.id} pathOptions={countryOptions} positions={swapCoords(countryData.geometry.coordinates)}>
             <Tooltip direction="top" offset={[0, -3]} className={classes.tooltip} sticky>{countryData.properties.name}</Tooltip>
