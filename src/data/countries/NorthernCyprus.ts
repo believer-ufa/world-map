@@ -2,7 +2,7 @@ import { LatLngExpression } from 'leaflet';
 
 export const NorthernCyprus = {
   type: 'Feature',
-  id: '-99',
+  id: '-99-northern-cyprus',
   properties: { name: 'Northern Cyprus' },
   geometry: {
     type: 'Polygon',

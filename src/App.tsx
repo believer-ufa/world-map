@@ -1,7 +1,7 @@
 import { useState, useMemo, useCallback, useEffect } from 'react';
 
 import { Map, PathOptions } from 'leaflet';
-import { MapContainer, Polygon, TileLayer } from 'react-leaflet';
+import { MapContainer, Polygon, TileLayer, Tooltip } from 'react-leaflet';
 
 import 'leaflet/dist/leaflet.css';
 
@@ -102,7 +102,9 @@ function App() {
       <MapContainer ref={setMap} className={classes.mapContainer} center={[30, 0]} zoom={3}>
         <TileLayer attribution="© OpenStreetMap" url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
         {allCountries.features.map((countryData) => (
-          <Polygon pathOptions={countryOptions} positions={swapCoords(countryData.geometry.coordinates)} />
+          <Polygon key={countryData.id} pathOptions={countryOptions} positions={swapCoords(countryData.geometry.coordinates)}>
+            <Tooltip direction="top" offset={[0, -3]} className={classes.tooltip} sticky>{countryData.properties.name}</Tooltip>
+          </Polygon>
         ))}
       </MapContainer>
     </div>

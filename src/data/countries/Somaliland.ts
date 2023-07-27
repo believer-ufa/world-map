@@ -2,7 +2,7 @@ import { LatLngExpression } from 'leaflet';
 
 export const Somaliland = {
   type: 'Feature',
-  id: '-99',
+  id: '-99-somaliland',
   properties: { name: 'Somaliland' },
   geometry: {
     type: 'Polygon',
