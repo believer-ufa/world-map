@@ -1,0 +1,5 @@
+{
+  "openFilesWhenDone": [
+    "[FTName % pascalcase].tsx"
+  ]
+}
