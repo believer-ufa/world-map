@@ -69,7 +69,10 @@ function App() {
   return (
     <div className={classes.appContainer}>
       <MapContainer ref={setMap} className={classes.mapContainer} center={[30, 0]} zoom={3}>
-        <TileLayer attribution="© OpenStreetMap" url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+        <TileLayer
+          attribution="© OpenStreetMap | <a target='_blank' href='https://github.com/believer-ufa/world-map'>Source Code</a>"
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
         {map ? <CoordsPanel map={map} /> : null}
         {allCountries.features.map((countryData) => (
           <Polygon key={countryData.id} pathOptions={countryOptions} positions={swapCoords(countryData.geometry.coordinates)}>
