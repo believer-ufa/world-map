@@ -32,6 +32,7 @@ module.exports = {
   },
   rules: {
     '@typescript-eslint/no-unused-vars': 0,
+    '@typescript-eslint/unbound-method': 0,
     'react/prop-types': 0,
     'no-shadow': 0,
     'react/no-array-index-key': 0,

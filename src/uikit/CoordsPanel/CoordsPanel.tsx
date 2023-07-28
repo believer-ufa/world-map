@@ -2,7 +2,10 @@ import { memo, useCallback, useEffect, useState } from 'react';
 import cn from 'classnames';
 
 import { Map } from 'leaflet';
+import useFm from '@/hooks/useFm';
 import classes from './CoordsPanel.module.scss';
+
+import { coordsPanelMessages } from './messages';
 
 export interface CoordsPanelProps {
   position?: 'bottomleft' | 'bottomright' | 'topleft' | 'topright';
@@ -18,6 +21,7 @@ const POSITION_CLASSES = {
 };
 
 export const CoordsPanel = memo<CoordsPanelProps>(({ position, className, map }) => {
+  const { fm } = useFm();
   const [coords, setCoords] = useState(() => map.getCenter());
   const positionClass = (position && POSITION_CLASSES?.[position]) ?? POSITION_CLASSES.topright;
 
@@ -35,7 +39,8 @@ export const CoordsPanel = memo<CoordsPanelProps>(({ position, className, map })
   return (
     <div className={cn(classes.container, positionClass, className)}>
       <div className={cn(classes.control, 'leaflet-control leaflet-bar')}>
-        latitude: {' '} {coords.lat.toFixed(4)}, longitude: {' '} {coords.lng.toFixed(4)}
+        {fm(coordsPanelMessages.latitude)}: {' '} {coords.lat.toFixed(4)},
+        {fm(coordsPanelMessages.longitude)}: {' '} {coords.lng.toFixed(4)}
       </div>
     </div>
   );
