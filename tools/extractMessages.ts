@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unsafe-return */
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
@@ -5,7 +6,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 
 import fs from 'fs-extra';
-import glob from 'glob';
+import { glob } from 'glob';
 import { extract } from '@formatjs/cli-lib';
 
 const locales = ['en', 'ru'];
@@ -26,12 +27,12 @@ async function mergeToFile(locale: string, toBuild: boolean) {
   const originalMessages: any = {};
 
   try {
-    const oldFile = await (await fs.readFile(fileName)).toString();
+    const oldFile = (await fs.readFile(fileName)).toString();
 
     let oldJson;
     try {
       oldJson = JSON.parse(oldFile);
-    } catch (err) {
+    } catch (err: any) {
       throw new Error(`Error parsing messages JSON in file ${fileName}`);
     }
 
@@ -61,14 +62,14 @@ async function mergeToFile(locale: string, toBuild: boolean) {
 
   await writeMessages(fileName, result);
 
-  console.log(`Messages updated: ${fileName}`);
+  console.info(`Messages updated: ${fileName}`);
 
   if (toBuild && locale !== '_default') {
     const buildFileName = `build/messages/${locale}.json`;
     try {
       await writeMessages(buildFileName, result);
-      console.log(`Build messages updated: ${buildFileName}`);
-    } catch (err) {
+      console.info(`Build messages updated: ${buildFileName}`);
+    } catch (err: any) {
       console.error(`Failed to update ${buildFileName}`);
     }
   }
@@ -123,7 +124,7 @@ async function extractMessages() {
       } else {
         delete fileToMessages[posixName];
       }
-    } catch (err) {
+    } catch (err: any) {
       console.error(`extractMessages: In ${fileName}:\n`, err.codeFrame || err);
     }
   };

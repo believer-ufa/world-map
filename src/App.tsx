@@ -66,6 +66,9 @@ function App() {
     opacity: 1,
   } as PathOptions), []);
 
+  // custom tile layers for leaflet:
+  // https://leaflet-extras.github.io/leaflet-providers/preview/
+
   return (
     <div className={classes.appContainer}>
       <MapContainer ref={setMap} className={classes.mapContainer} center={[30, 0]} zoom={3}>

@@ -58,7 +58,7 @@ module.exports = {
     'no-underscore-dangle': 0,
     'no-unused-vars': 0,
     'no-return-assign': 0,
-    'no-console': ['warn', { allow: ['warn', 'error', 'info'] }],
+    'no-console': ['warn', { allow: ['warn', 'error', 'info', 'time', 'timeEnd'] }],
     'max-len': ['warn', { code: 130 }],
     'arrow-body-style': 0,
     'react/jsx-one-expression-per-line': 0,
