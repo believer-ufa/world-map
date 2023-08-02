@@ -95,7 +95,7 @@ function mergeMessages() {
 async function updateMessages(toBuild: boolean) {
   mergeMessages();
   await Promise.all(
-    ['_default', ...locales].map((locale: string) => mergeToFile(locale, toBuild)),
+    locales.map((locale: string) => mergeToFile(locale, toBuild)),
   );
 }
 

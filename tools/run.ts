@@ -32,7 +32,6 @@ const run = (fn: { default: callbackFunc } | callbackFunc, options?: object) => 
 if (process.argv.length > 2) {
   const loadAndRunModule = async () => {
     const loadedModule = await import(`./${process.argv[2]}.ts`) as ({ default: callbackFunc } | callbackFunc);
-    console.log({ loadedModule });
     run(loadedModule).catch(printErrorAndExit);
   };
 

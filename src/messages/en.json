@@ -1,0 +1,18 @@
+[
+  {
+    "id": "CoordsPanel.latitude",
+    "defaultMessage": "Latitude",
+    "message": "",
+    "files": [
+      "src/uikit/CoordsPanel/messages.ts"
+    ]
+  },
+  {
+    "id": "CoordsPanel.longitude",
+    "defaultMessage": "Longitude",
+    "message": "",
+    "files": [
+      "src/uikit/CoordsPanel/messages.ts"
+    ]
+  }
+]
