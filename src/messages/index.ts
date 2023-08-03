@@ -1,19 +1,23 @@
-/* eslint-disable @typescript-eslint/no-unsafe-return */
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-unsafe-argument */
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-
+import { LanguageCode } from '@/types/language';
 import en from './en.json';
 import ru from './ru.json';
 
-const locales: any = { en, ru };
-const messages: any = {};
+interface MessageData {
+  id: string;
+  defaultMessage: string;
+  message: string;
+  files: string[];
+}
 
-Object.keys(locales).forEach((key: string) => {
-  const data: any = locales?.[key];
-  messages[key] = data.reduce((msgs: any, msg: any) => {
+type MessagesArray = MessageData[]
+type AllLangsMessagesMap = Record<LanguageCode, MessagesArray>
+
+const locales: AllLangsMessagesMap = { en, ru };
+const messages: Record<LanguageCode, Record<string, string>> = { ru: {}, en: {} };
+
+Object.keys(locales).forEach((lang: string): void => {
+  const data: MessagesArray = locales?.[lang as LanguageCode];
+  messages[lang as LanguageCode] = data.reduce((msgs: Record<string, string>, msg: MessageData) => {
     msgs[msg.id] = msg.message;
     return msgs;
   }, {});

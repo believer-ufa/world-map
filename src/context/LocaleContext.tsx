@@ -1,35 +1,25 @@
 import React, { useCallback, useContext, useMemo } from 'react';
-import Cookies from 'js-cookie';
 
 import { useLocalStorage } from '@/hooks/useLocalStorage';
-import { useUserContext } from '@/context/UserContext';
+import { LanguageCode } from '@/types/language';
 
-import { LanguageCode } from '@/gql/types';
-import { MeDocument, useUpdateUserMutation } from '@/gql/schemas-generated/account';
-import { LocaleContextProps } from './types';
+interface LocaleContextProps {
+  locale: LanguageCode;
+  setLocale: (newLocale: LanguageCode) => void;
+}
 
 export const LocaleContext = React.createContext<LocaleContextProps>({
-  locale: LanguageCode.Ru,
-  setLocale: () => {},
+  locale: LanguageCode.En,
+  setLocale: () => undefined,
 });
 
-export const LocaleContextProvider = ({ children }) => {
-  const langCookie = (Cookies.get('lang') || '') as LanguageCode;
-  const { user } = useUserContext();
+export const LocaleContextProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const [locale = LanguageCode.En, setLocaleLS] = useLocalStorage<LanguageCode>('locale', LanguageCode.En);
 
-  const defaultLang = [LanguageCode.Ru, LanguageCode.En].includes(langCookie) ? langCookie : LanguageCode.En;
-  const [localeLS = LanguageCode.En, setLocaleLS] = useLocalStorage<LanguageCode>('locale', defaultLang);
+  const setLocale = useCallback((newLang: LanguageCode) => {
+    setLocaleLS(newLang);
+  }, [setLocaleLS]);
 
-  const [updateUser] = useUpdateUserMutation({
-    refetchQueries: [{ query: MeDocument }],
-  });
-
-  const setLocale = useCallback(async (val) => {
-    await updateUser({ variables: { value: { language: val } } });
-    setLocaleLS(val);
-  }, [setLocaleLS, updateUser]);
-
-  const locale = user?.language || localeLS;//user.me.language ||
   const value = useMemo(() => ({ locale, setLocale }), [locale, setLocale]);
 
   return (

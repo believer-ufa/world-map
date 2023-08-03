@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
+/* eslint-disable @typescript-eslint/ban-types */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-return */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
@@ -66,7 +69,7 @@ export const useLocalStorage = <T>(key?: string, initialValueArg?: T | undefined
       if (key) {
         setState((currentState) => {
           try {
-            const newState = typeof valOrFunc === 'function' ? (valOrFunc as Function)(currentState) : valOrFunc;
+            const newState: any = typeof valOrFunc === 'function' ? (valOrFunc as Function)(currentState) : valOrFunc;
             if (typeof newState === 'undefined') return currentState;
             let value: string;
 
@@ -107,8 +110,8 @@ export const useLocalStorage = <T>(key?: string, initialValueArg?: T | undefined
 
   useEffect(() => {
     if (key) {
-      const callback = (eventData) => {
-        if (instanceId !== eventData.instanceId && key === eventData.key) {
+      const callback = (eventData: any) => {
+        if (instanceId !== eventData?.instanceId && key === eventData.key) {
           setState(initializer.current(key));
         }
       };
