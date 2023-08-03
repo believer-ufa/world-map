@@ -1,9 +1,10 @@
 import { LatLngExpression } from 'leaflet';
+import { countriesNames } from '../messages';
 
 export const Senegal = {
   type: 'Feature',
   id: 'SEN',
-  properties: { name: 'Senegal' },
+  properties: { name: countriesNames.senegal },
   geometry: {
     type: 'Polygon',
     coordinates: [

@@ -1,9 +1,10 @@
 import { LatLngExpression } from 'leaflet';
+import { countriesNames } from '../messages';
 
 export const Suriname = {
   type: 'Feature',
   id: 'SUR',
-  properties: { name: 'Suriname' },
+  properties: { name: countriesNames.suriname },
   geometry: {
     type: 'Polygon',
     coordinates: [

@@ -1,9 +1,10 @@
 import { LatLngExpression } from 'leaflet';
+import { countriesNames } from '../messages';
 
 export const Bermuda = {
   type: 'Feature',
   id: 'BMU',
-  properties: { name: 'Bermuda' },
+  properties: { name: countriesNames.bermuda },
   geometry: {
     type: 'Polygon',
     coordinates: [

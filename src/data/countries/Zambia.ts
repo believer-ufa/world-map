@@ -1,9 +1,10 @@
 import { LatLngExpression } from 'leaflet';
+import { countriesNames } from '../messages';
 
 export const Zambia = {
   type: 'Feature',
   id: 'ZMB',
-  properties: { name: 'Zambia' },
+  properties: { name: countriesNames.zambia },
   geometry: {
     type: 'Polygon',
     coordinates: [

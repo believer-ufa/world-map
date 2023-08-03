@@ -4,10 +4,12 @@ import { MapContainer, Polygon, TileLayer, Tooltip } from 'react-leaflet';
 
 import { swapCoords } from '@/helpers/geo/swapCoords';
 import { allCountries } from '@/data/allCountries';
-import { CoordsPanel } from '@/uikit/CoordsPanel';
 
 import classes from './App.module.scss';
 import useFm from './hooks/useFm';
+
+import { CoordinatesWidget } from './pages/map/widgets/CoordinatesWidget';
+import { TopRightPanel } from './pages/map/panels/TopRightPanel';
 
 // var myStyle = {
 //   fillColor: "grey",
@@ -78,7 +80,9 @@ function App() {
           attribution="© OpenStreetMap | <a target='_blank' href='https://github.com/believer-ufa/world-map'>Source Code</a>"
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        {map ? <CoordsPanel map={map} /> : null}
+        <TopRightPanel>
+          {map ? <CoordinatesWidget map={map} /> : null}
+        </TopRightPanel>
         {allCountries.features.map((countryData) => (
           <Polygon key={countryData.id} pathOptions={countryOptions} positions={swapCoords(countryData.geometry.coordinates)}>
             <Tooltip

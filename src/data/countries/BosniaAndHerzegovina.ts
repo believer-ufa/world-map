@@ -1,9 +1,10 @@
 import { LatLngExpression } from 'leaflet';
+import { countriesNames } from '../messages';
 
 export const BosniaAndHerzegovina = {
   type: 'Feature',
   id: 'BIH',
-  properties: { name: 'Bosnia and Herzegovina' },
+  properties: { name: countriesNames.bosniaAndHerzegovina },
   geometry: {
     type: 'Polygon',
     coordinates: [

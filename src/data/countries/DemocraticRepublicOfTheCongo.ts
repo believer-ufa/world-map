@@ -1,9 +1,10 @@
 import { LatLngExpression } from 'leaflet';
+import { countriesNames } from '../messages';
 
 export const DemocraticRepublicOfTheCongo = {
   type: 'Feature',
   id: 'COD',
-  properties: { name: 'Democratic Republic of the Congo' },
+  properties: { name: countriesNames.democraticRepublicOfTheCongo },
   geometry: {
     type: 'Polygon',
     coordinates: [

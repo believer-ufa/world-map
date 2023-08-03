@@ -1,9 +1,10 @@
 import { LatLngExpression } from 'leaflet';
+import { countriesNames } from '../messages';
 
 export const WesternSahara = {
   type: 'Feature',
   id: 'ESH',
-  properties: { name: 'Western Sahara' },
+  properties: { name: countriesNames.westernSahara },
   geometry: {
     type: 'Polygon',
     coordinates: [

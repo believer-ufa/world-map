@@ -1,9 +1,10 @@
 import { LatLngExpression } from 'leaflet';
+import { countriesNames } from '../messages';
 
 export const NorthKorea = {
   type: 'Feature',
   id: 'PRK',
-  properties: { name: 'North Korea' },
+  properties: { name: countriesNames.northKorea },
   geometry: {
     type: 'Polygon',
     coordinates: [

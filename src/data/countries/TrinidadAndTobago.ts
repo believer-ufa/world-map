@@ -1,9 +1,10 @@
 import { LatLngExpression } from 'leaflet';
+import { countriesNames } from '../messages';
 
 export const TrinidadAndTobago = {
   type: 'Feature',
   id: 'TTO',
-  properties: { name: 'Trinidad and Tobago' },
+  properties: { name: countriesNames.trinidadAndTobago },
   geometry: {
     type: 'Polygon',
     coordinates: [

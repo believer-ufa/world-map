@@ -1,9 +1,10 @@
 import { LatLngExpression } from 'leaflet';
+import { countriesNames } from '../messages';
 
 export const Vanuatu = {
   type: 'Feature',
   id: 'VUT',
-  properties: { name: 'Vanuatu' },
+  properties: { name: countriesNames.vanuatu },
   geometry: {
     type: 'MultiPolygon',
     coordinates: [

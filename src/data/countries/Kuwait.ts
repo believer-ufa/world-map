@@ -1,9 +1,10 @@
 import { LatLngExpression } from 'leaflet';
+import { countriesNames } from '../messages';
 
 export const Kuwait = {
   type: 'Feature',
   id: 'KWT',
-  properties: { name: 'Kuwait' },
+  properties: { name: countriesNames.kuwait },
   geometry: {
     type: 'Polygon',
     coordinates: [

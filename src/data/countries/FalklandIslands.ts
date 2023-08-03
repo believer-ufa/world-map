@@ -1,9 +1,10 @@
 import { LatLngExpression } from 'leaflet';
+import { countriesNames } from '../messages';
 
 export const FalklandIslands = {
   type: 'Feature',
   id: 'FLK',
-  properties: { name: 'Falkland Islands' },
+  properties: { name: countriesNames.falklandIslands },
   geometry: {
     type: 'Polygon',
     coordinates: [

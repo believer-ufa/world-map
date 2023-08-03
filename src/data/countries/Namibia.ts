@@ -1,9 +1,10 @@
 import { LatLngExpression } from 'leaflet';
+import { countriesNames } from '../messages';
 
 export const Namibia = {
   type: 'Feature',
   id: 'NAM',
-  properties: { name: 'Namibia' },
+  properties: { name: countriesNames.namibia },
   geometry: {
     type: 'Polygon',
     coordinates: [

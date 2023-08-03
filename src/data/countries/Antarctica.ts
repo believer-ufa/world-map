@@ -1,9 +1,10 @@
 import { LatLngExpression } from 'leaflet';
+import { countriesNames } from '../messages';
 
 export const Antarctica = {
   type: 'Feature',
   id: 'ATA',
-  properties: { name: 'Antarctica' },
+  properties: { name: countriesNames.antarctica },
   geometry: {
     type: 'MultiPolygon',
     coordinates: [

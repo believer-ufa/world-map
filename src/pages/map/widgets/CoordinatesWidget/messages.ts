@@ -1,6 +1,6 @@
 import { defineMessages } from 'react-intl';
 
-export const coordsPanelMessages = defineMessages({
+export const coordinatesWidgetMessages = defineMessages({
   latitude: {
     id: 'CoordsPanel.latitude',
     defaultMessage: 'Latitude',

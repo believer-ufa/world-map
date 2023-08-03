@@ -1,9 +1,10 @@
 import { LatLngExpression } from 'leaflet';
+import { countriesNames } from '../messages';
 
 export const SierraLeone = {
   type: 'Feature',
   id: 'SLE',
-  properties: { name: 'Sierra Leone' },
+  properties: { name: countriesNames.sierraLeone },
   geometry: {
     type: 'Polygon',
     coordinates: [

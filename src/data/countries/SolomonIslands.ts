@@ -1,9 +1,10 @@
 import { LatLngExpression } from 'leaflet';
+import { countriesNames } from '../messages';
 
 export const SolomonIslands = {
   type: 'Feature',
   id: 'SLB',
-  properties: { name: 'Solomon Islands' },
+  properties: { name: countriesNames.solomonIslands },
   geometry: {
     type: 'MultiPolygon',
     coordinates: [

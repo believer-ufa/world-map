@@ -1,9 +1,10 @@
 import { LatLngExpression } from 'leaflet';
+import { countriesNames } from '../messages';
 
 export const PapuaNewGuinea = {
   type: 'Feature',
   id: 'PNG',
-  properties: { name: 'Papua New Guinea' },
+  properties: { name: countriesNames.papuaNewGuinea },
   geometry: {
     type: 'MultiPolygon',
     coordinates: [

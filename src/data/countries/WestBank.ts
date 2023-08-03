@@ -1,9 +1,10 @@
 import { LatLngExpression } from 'leaflet';
+import { countriesNames } from '../messages';
 
 export const WestBank = {
   type: 'Feature',
   id: 'PSE',
-  properties: { name: 'West Bank' },
+  properties: { name: countriesNames.westBank },
   geometry: {
     type: 'Polygon',
     coordinates: [
