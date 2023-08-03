@@ -6,7 +6,10 @@ import { MapContainer, TileLayer } from 'react-leaflet';
 import classes from './Map.module.scss';
 
 import { CoordinatesWidget } from './widgets/CoordinatesWidget';
+import { DriverLicensesWidget } from './widgets/DriverLicensesWidget';
+
 import { TopRightPanel } from './panels/TopRightPanel';
+
 import { AllCountriesPolygons } from './components/AllCountriesPolygons';
 
 export interface MapProps {
@@ -71,6 +74,7 @@ export const MapComponent = memo<MapProps>(({ className }) => {
       <AllCountriesPolygons />
       <TopRightPanel>
         {map ? <CoordinatesWidget map={map} /> : null}
+        <DriverLicensesWidget />
       </TopRightPanel>
     </MapContainer>
   );
