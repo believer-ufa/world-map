@@ -7,6 +7,7 @@ import { allCountries } from '@/data/allCountries';
 import { CoordsPanel } from '@/uikit/CoordsPanel';
 
 import classes from './App.module.scss';
+import useFm from './hooks/useFm';
 
 // var myStyle = {
 //   fillColor: "grey",
@@ -53,6 +54,7 @@ import classes from './App.module.scss';
 
 function App() {
   const [map, setMap] = useState<Map | null>(null);
+  const { fm } = useFm();
 
   const countryOptions = useMemo(() => ({
     color: 'green',
@@ -79,7 +81,13 @@ function App() {
         {map ? <CoordsPanel map={map} /> : null}
         {allCountries.features.map((countryData) => (
           <Polygon key={countryData.id} pathOptions={countryOptions} positions={swapCoords(countryData.geometry.coordinates)}>
-            <Tooltip direction="top" offset={[0, -3]} className={classes.tooltip} sticky>{countryData.properties.name}</Tooltip>
+            <Tooltip
+              direction="top"
+              offset={[0, -3]}
+              className={classes.tooltip}
+              sticky
+            >{fm(countryData.properties.name)}
+            </Tooltip>
           </Polygon>
         ))}
       </MapContainer>

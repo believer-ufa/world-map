@@ -14,5 +14,37 @@
     "files": [
       "src/uikit/CoordsPanel/messages.ts"
     ]
+  },
+  {
+    "id": "CountriesNames.afghanistan",
+    "defaultMessage": "Afghanistan",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.albania",
+    "defaultMessage": "Albania",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.algeria",
+    "defaultMessage": "Algeria",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.angola",
+    "defaultMessage": "Angola",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
   }
 ]
