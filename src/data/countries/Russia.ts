@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const Russia = {
   type: 'Feature',
   id: 'RUS',
-  properties: { name: countriesNames.russia },
+  key: CountriesKeys.russia,
+  properties: { name: countriesNamesMessages.russia },
   geometry: {
     type: 'MultiPolygon',
     coordinates: [

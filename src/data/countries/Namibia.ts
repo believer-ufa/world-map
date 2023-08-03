@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const Namibia = {
   type: 'Feature',
   id: 'NAM',
-  properties: { name: countriesNames.namibia },
+  key: CountriesKeys.namibia,
+  properties: { name: countriesNamesMessages.namibia },
   geometry: {
     type: 'Polygon',
     coordinates: [

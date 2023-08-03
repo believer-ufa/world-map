@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const Slovenia = {
   type: 'Feature',
   id: 'SVN',
-  properties: { name: countriesNames.slovenia },
+  key: CountriesKeys.slovenia,
+  properties: { name: countriesNamesMessages.slovenia },
   geometry: {
     type: 'Polygon',
     coordinates: [

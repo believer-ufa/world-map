@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const SierraLeone = {
   type: 'Feature',
   id: 'SLE',
-  properties: { name: countriesNames.sierraLeone },
+  key: CountriesKeys.sierraLeone,
+  properties: { name: countriesNamesMessages.sierraLeone },
   geometry: {
     type: 'Polygon',
     coordinates: [

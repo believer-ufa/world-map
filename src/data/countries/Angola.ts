@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const Angola = {
   type: 'Feature',
   id: 'AGO',
-  properties: { name: countriesNames.angola },
+  key: CountriesKeys.angola,
+  properties: { name: countriesNamesMessages.angola },
   geometry: {
     type: 'MultiPolygon',
     coordinates: [

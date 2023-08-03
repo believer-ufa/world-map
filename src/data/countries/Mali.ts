@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const Mali = {
   type: 'Feature',
   id: 'MLI',
-  properties: { name: countriesNames.mali },
+  key: CountriesKeys.mali,
+  properties: { name: countriesNamesMessages.mali },
   geometry: {
     type: 'Polygon',
     coordinates: [

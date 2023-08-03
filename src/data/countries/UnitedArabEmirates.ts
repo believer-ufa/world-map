@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const UnitedArabEmirates = {
   type: 'Feature',
   id: 'ARE',
-  properties: { name: countriesNames.unitedArabEmirates },
+  key: CountriesKeys.unitedArabEmirates,
+  properties: { name: countriesNamesMessages.unitedArabEmirates },
   geometry: {
     type: 'Polygon',
     coordinates: [

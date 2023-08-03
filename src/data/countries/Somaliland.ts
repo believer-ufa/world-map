@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const Somaliland = {
   type: 'Feature',
   id: '-99-somaliland',
-  properties: { name: countriesNames.somaliland },
+  key: CountriesKeys.somaliland,
+  properties: { name: countriesNamesMessages.somaliland },
   geometry: {
     type: 'Polygon',
     coordinates: [

@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const SouthAfrica = {
   type: 'Feature',
   id: 'ZAF',
-  properties: { name: countriesNames.southAfrica },
+  key: CountriesKeys.southAfrica,
+  properties: { name: countriesNamesMessages.southAfrica },
   geometry: {
     type: 'Polygon',
     coordinates: [

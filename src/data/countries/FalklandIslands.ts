@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const FalklandIslands = {
   type: 'Feature',
   id: 'FLK',
-  properties: { name: countriesNames.falklandIslands },
+  key: CountriesKeys.falklandIslands,
+  properties: { name: countriesNamesMessages.falklandIslands },
   geometry: {
     type: 'Polygon',
     coordinates: [

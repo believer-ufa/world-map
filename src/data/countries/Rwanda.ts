@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const Rwanda = {
   type: 'Feature',
   id: 'RWA',
-  properties: { name: countriesNames.rwanda },
+  key: CountriesKeys.rwanda,
+  properties: { name: countriesNamesMessages.rwanda },
   geometry: {
     type: 'Polygon',
     coordinates: [

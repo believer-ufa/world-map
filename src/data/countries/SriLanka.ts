@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const SriLanka = {
   type: 'Feature',
   id: 'LKA',
-  properties: { name: countriesNames.sriLanka },
+  key: CountriesKeys.sriLanka,
+  properties: { name: countriesNamesMessages.sriLanka },
   geometry: {
     type: 'Polygon',
     coordinates: [

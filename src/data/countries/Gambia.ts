@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const Gambia = {
   type: 'Feature',
   id: 'GMB',
-  properties: { name: countriesNames.gambia },
+  key: CountriesKeys.gambia,
+  properties: { name: countriesNamesMessages.gambia },
   geometry: {
     type: 'Polygon',
     coordinates: [

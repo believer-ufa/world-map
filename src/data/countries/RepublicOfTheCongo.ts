@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const RepublicOfTheCongo = {
   type: 'Feature',
   id: 'COG',
-  properties: { name: countriesNames.republicOfTheCongo },
+  key: CountriesKeys.republicOfTheCongo,
+  properties: { name: countriesNamesMessages.republicOfTheCongo },
   geometry: {
     type: 'Polygon',
     coordinates: [

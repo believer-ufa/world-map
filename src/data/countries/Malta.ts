@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const Malta = {
   type: 'Feature',
   id: 'MLT',
-  properties: { name: countriesNames.malta },
+  key: CountriesKeys.malta,
+  properties: { name: countriesNamesMessages.malta },
   geometry: {
     type: 'MultiPolygon',
     coordinates: [

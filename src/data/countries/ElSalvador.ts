@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const ElSalvador = {
   type: 'Feature',
   id: 'SLV',
-  properties: { name: countriesNames.elSalvador },
+  key: CountriesKeys.elSalvador,
+  properties: { name: countriesNamesMessages.elSalvador },
   geometry: {
     type: 'Polygon',
     coordinates: [

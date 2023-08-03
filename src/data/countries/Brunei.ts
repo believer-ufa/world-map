@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const Brunei = {
   type: 'Feature',
   id: 'BRN',
-  properties: { name: countriesNames.brunei },
+  key: CountriesKeys.brunei,
+  properties: { name: countriesNamesMessages.brunei },
   geometry: {
     type: 'Polygon',
     coordinates: [

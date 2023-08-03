@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const Belize = {
   type: 'Feature',
   id: 'BLZ',
-  properties: { name: countriesNames.belize },
+  key: CountriesKeys.belize,
+  properties: { name: countriesNamesMessages.belize },
   geometry: {
     type: 'Polygon',
     coordinates: [

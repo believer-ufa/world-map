@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const Honduras = {
   type: 'Feature',
   id: 'HND',
-  properties: { name: countriesNames.honduras },
+  key: CountriesKeys.honduras,
+  properties: { name: countriesNamesMessages.honduras },
   geometry: {
     type: 'Polygon',
     coordinates: [

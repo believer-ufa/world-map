@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const Libya = {
   type: 'Feature',
   id: 'LBY',
-  properties: { name: countriesNames.libya },
+  key: CountriesKeys.libya,
+  properties: { name: countriesNamesMessages.libya },
   geometry: {
     type: 'Polygon',
     coordinates: [

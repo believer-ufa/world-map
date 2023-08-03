@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const Fiji = {
   type: 'Feature',
   id: 'FJI',
-  properties: { name: countriesNames.fiji },
+  key: CountriesKeys.fiji,
+  properties: { name: countriesNamesMessages.fiji },
   geometry: {
     type: 'MultiPolygon',
     coordinates: [

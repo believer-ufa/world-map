@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const WestBank = {
   type: 'Feature',
   id: 'PSE',
-  properties: { name: countriesNames.westBank },
+  key: CountriesKeys.westBank,
+  properties: { name: countriesNamesMessages.westBank },
   geometry: {
     type: 'Polygon',
     coordinates: [

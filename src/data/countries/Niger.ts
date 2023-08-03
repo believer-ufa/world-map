@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const Niger = {
   type: 'Feature',
   id: 'NER',
-  properties: { name: countriesNames.niger },
+  key: CountriesKeys.niger,
+  properties: { name: countriesNamesMessages.niger },
   geometry: {
     type: 'Polygon',
     coordinates: [

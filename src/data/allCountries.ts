@@ -179,6 +179,10 @@ import { Yemen } from './countries/Yemen';
 import { Zambia } from './countries/Zambia';
 import { Zimbabwe } from './countries/Zimbabwe';
 
+// TODO: Add Bahrain, Cape Verde, Monaco, San Marino, Seychelles,
+// Andorra, Gibraltar, Hong Kong, Grenada, Western Samoa, Congo, New Caledonia,
+// St Vincent and the Grenadines, St Lucia, Singapore, French Polynesia
+
 export const allCountries = {
   type: 'FeatureCollection',
   features: [

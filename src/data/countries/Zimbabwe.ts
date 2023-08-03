@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const Zimbabwe = {
   type: 'Feature',
   id: 'ZWE',
-  properties: { name: countriesNames.zimbabwe },
+  key: CountriesKeys.zimbabwe,
+  properties: { name: countriesNamesMessages.zimbabwe },
   geometry: {
     type: 'Polygon',
     coordinates: [

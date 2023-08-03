@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const EquatorialGuinea = {
   type: 'Feature',
   id: 'GNQ',
-  properties: { name: countriesNames.equatorialGuinea },
+  key: CountriesKeys.equatorialGuinea,
+  properties: { name: countriesNamesMessages.equatorialGuinea },
   geometry: {
     type: 'Polygon',
     coordinates: [

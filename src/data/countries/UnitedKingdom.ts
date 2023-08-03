@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const UnitedKingdom = {
   type: 'Feature',
   id: 'GBR',
-  properties: { name: countriesNames.unitedKingdom },
+  key: CountriesKeys.unitedKingdom,
+  properties: { name: countriesNamesMessages.unitedKingdom },
   geometry: {
     type: 'MultiPolygon',
     coordinates: [

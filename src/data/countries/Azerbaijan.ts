@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const Azerbaijan = {
   type: 'Feature',
   id: 'AZE',
-  properties: { name: countriesNames.azerbaijan },
+  key: CountriesKeys.azerbaijan,
+  properties: { name: countriesNamesMessages.azerbaijan },
   geometry: {
     type: 'MultiPolygon',
     coordinates: [

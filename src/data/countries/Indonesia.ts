@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const Indonesia = {
   type: 'Feature',
   id: 'IDN',
-  properties: { name: countriesNames.indonesia },
+  key: CountriesKeys.indonesia,
+  properties: { name: countriesNamesMessages.indonesia },
   geometry: {
     type: 'MultiPolygon',
     coordinates: [

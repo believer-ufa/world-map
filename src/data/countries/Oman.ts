@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const Oman = {
   type: 'Feature',
   id: 'OMN',
-  properties: { name: countriesNames.oman },
+  key: CountriesKeys.oman,
+  properties: { name: countriesNamesMessages.oman },
   geometry: {
     type: 'MultiPolygon',
     coordinates: [

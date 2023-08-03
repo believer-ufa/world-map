@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const NewCaledonia = {
   type: 'Feature',
   id: 'NCL',
-  properties: { name: countriesNames.newCaledonia },
+  key: CountriesKeys.newCaledonia,
+  properties: { name: countriesNamesMessages.newCaledonia },
   geometry: {
     type: 'Polygon',
     coordinates: [

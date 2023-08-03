@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const FrenchSouthernAndAntarcticLands = {
   type: 'Feature',
   id: 'ATF',
-  properties: { name: countriesNames.frenchSouthernAndAntarcticLands },
+  key: CountriesKeys.frenchSouthernAndAntarcticLands,
+  properties: { name: countriesNamesMessages.frenchSouthernAndAntarcticLands },
   geometry: {
     type: 'Polygon',
     coordinates: [

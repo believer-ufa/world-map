@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const Montenegro = {
   type: 'Feature',
   id: 'MNE',
-  properties: { name: countriesNames.montenegro },
+  key: CountriesKeys.montenegro,
+  properties: { name: countriesNamesMessages.montenegro },
   geometry: {
     type: 'Polygon',
     coordinates: [

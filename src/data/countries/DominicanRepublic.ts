@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const DominicanRepublic = {
   type: 'Feature',
   id: 'DOM',
-  properties: { name: countriesNames.dominicanRepublic },
+  key: CountriesKeys.dominicanRepublic,
+  properties: { name: countriesNamesMessages.dominicanRepublic },
   geometry: {
     type: 'Polygon',
     coordinates: [

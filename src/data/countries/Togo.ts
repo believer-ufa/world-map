@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const Togo = {
   type: 'Feature',
   id: 'TGO',
-  properties: { name: countriesNames.togo },
+  key: CountriesKeys.togo,
+  properties: { name: countriesNamesMessages.togo },
   geometry: {
     type: 'Polygon',
     coordinates: [

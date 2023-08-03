@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const CentralAfricanRepublic = {
   type: 'Feature',
   id: 'CAF',
-  properties: { name: countriesNames.centralAfricanRepublic },
+  key: CountriesKeys.centralAfricanRepublic,
+  properties: { name: countriesNamesMessages.centralAfricanRepublic },
   geometry: {
     type: 'Polygon',
     coordinates: [

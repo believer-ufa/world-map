@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const NewZealand = {
   type: 'Feature',
   id: 'NZL',
-  properties: { name: countriesNames.newZealand },
+  key: CountriesKeys.newZealand,
+  properties: { name: countriesNamesMessages.newZealand },
   geometry: {
     type: 'MultiPolygon',
     coordinates: [

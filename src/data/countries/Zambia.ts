@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const Zambia = {
   type: 'Feature',
   id: 'ZMB',
-  properties: { name: countriesNames.zambia },
+  key: CountriesKeys.zambia,
+  properties: { name: countriesNamesMessages.zambia },
   geometry: {
     type: 'Polygon',
     coordinates: [

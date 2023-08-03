@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const EastTimor = {
   type: 'Feature',
   id: 'TLS',
-  properties: { name: countriesNames.eastTimor },
+  key: CountriesKeys.eastTimor,
+  properties: { name: countriesNamesMessages.eastTimor },
   geometry: {
     type: 'Polygon',
     coordinates: [

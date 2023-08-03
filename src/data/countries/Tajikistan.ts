@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const Tajikistan = {
   type: 'Feature',
   id: 'TJK',
-  properties: { name: countriesNames.tajikistan },
+  key: CountriesKeys.tajikistan,
+  properties: { name: countriesNamesMessages.tajikistan },
   geometry: {
     type: 'Polygon',
     coordinates: [

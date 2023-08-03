@@ -1,6 +1,6 @@
 import { defineMessages } from 'react-intl';
 
-export const countriesNames = defineMessages({
+export const countriesNamesMessages = defineMessages({
   afghanistan: {
     id: 'CountriesNames.afghanistan',
     defaultMessage: 'Afghanistan',

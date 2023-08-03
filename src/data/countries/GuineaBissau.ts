@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const GuineaBissau = {
   type: 'Feature',
   id: 'GNB',
-  properties: { name: countriesNames.guineaBissau },
+  key: CountriesKeys.guineaBissau,
+  properties: { name: countriesNamesMessages.guineaBissau },
   geometry: {
     type: 'Polygon',
     coordinates: [

@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const Bhutan = {
   type: 'Feature',
   id: 'BTN',
-  properties: { name: countriesNames.bhutan },
+  key: CountriesKeys.bhutan,
+  properties: { name: countriesNamesMessages.bhutan },
   geometry: {
     type: 'Polygon',
     coordinates: [

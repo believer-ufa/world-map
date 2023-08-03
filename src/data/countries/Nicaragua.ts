@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const Nicaragua = {
   type: 'Feature',
   id: 'NIC',
-  properties: { name: countriesNames.nicaragua },
+  key: CountriesKeys.nicaragua,
+  properties: { name: countriesNamesMessages.nicaragua },
   geometry: {
     type: 'Polygon',
     coordinates: [

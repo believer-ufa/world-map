@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const UnitedRepublicOfTanzania = {
   type: 'Feature',
   id: 'TZA',
-  properties: { name: countriesNames.unitedRepublicOfTanzania },
+  key: CountriesKeys.unitedRepublicOfTanzania,
+  properties: { name: countriesNamesMessages.unitedRepublicOfTanzania },
   geometry: {
     type: 'Polygon',
     coordinates: [

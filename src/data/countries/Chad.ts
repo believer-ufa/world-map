@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const Chad = {
   type: 'Feature',
   id: 'TCD',
-  properties: { name: countriesNames.chad },
+  key: CountriesKeys.chad,
+  properties: { name: countriesNamesMessages.chad },
   geometry: {
     type: 'Polygon',
     coordinates: [

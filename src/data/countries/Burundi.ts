@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const Burundi = {
   type: 'Feature',
   id: 'BDI',
-  properties: { name: countriesNames.burundi },
+  key: CountriesKeys.burundi,
+  properties: { name: countriesNamesMessages.burundi },
   geometry: {
     type: 'Polygon',
     coordinates: [

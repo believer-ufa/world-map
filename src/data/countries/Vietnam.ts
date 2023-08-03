@@ -1,10 +1,12 @@
 import { LatLngExpression } from 'leaflet';
-import { countriesNames } from '../messages';
+import { countriesNamesMessages } from '../messages';
+import { CountriesKeys } from './types';
 
 export const Vietnam = {
   type: 'Feature',
   id: 'VNM',
-  properties: { name: countriesNames.vietnam },
+  key: CountriesKeys.vietnam,
+  properties: { name: countriesNamesMessages.vietnam },
   geometry: {
     type: 'Polygon',
     coordinates: [
