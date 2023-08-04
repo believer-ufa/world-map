@@ -6,11 +6,11 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
+import EventEmitterFabric from 'events';
+
 import {
   Dispatch, SetStateAction, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState,
 } from 'react';
-
-import EventEmitterFabric from 'events';
 
 import { v4 as uuid } from 'uuid';
 
