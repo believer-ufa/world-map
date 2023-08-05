@@ -1,7 +1,10 @@
-import { useState } from 'react';
+import { useMemo } from 'react';
+import { useLocation } from 'react-router-dom';
 
-const useSearchParams = () => {
-  return useState<URLSearchParams>(new URLSearchParams(window.location.search));
+const useSearchParams = (): URLSearchParams => {
+  const { search } = useLocation();
+
+  return useMemo(() => new URLSearchParams(search), [search]);
 };
 
 export default useSearchParams;

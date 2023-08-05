@@ -60,7 +60,7 @@ export interface MapProps {
 //   [51.52, -0.12],
 // ] as LatLngExpression[];
 
-export const MapComponent = memo<MapProps>(({ className }) => {
+export const MapPage = memo<MapProps>(() => {
   const [map, setMap] = useState<Map | null>(null);
   // custom tile layers for leaflet:
   // https://leaflet-extras.github.io/leaflet-providers/preview/

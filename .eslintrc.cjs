@@ -3,7 +3,8 @@ module.exports = {
   env: { browser: true, es2020: true },
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended-type-checked', // 'plugin:@typescript-eslint/strict-type-checked' - could be useful
+    // 'plugin:@typescript-eslint/recommended-type-checked',
+    // 'plugin:@typescript-eslint/strict-type-checked' - could be useful
     'plugin:@typescript-eslint/stylistic-type-checked',
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
@@ -33,6 +34,7 @@ module.exports = {
   rules: {
     '@typescript-eslint/no-unused-vars': 0,
     '@typescript-eslint/unbound-method': 0,
+    '@typescript-eslint/prefer-nullish-coalescing': 0,
     'react/prop-types': 0,
     'no-shadow': 0,
     'react/no-array-index-key': 0,

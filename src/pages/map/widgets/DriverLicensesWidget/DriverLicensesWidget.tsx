@@ -1,4 +1,4 @@
-import { ReactNode, useState, memo, useCallback } from 'react';
+import { ReactNode, memo, useCallback } from 'react';
 import cn from 'classnames';
 
 import useFm from '@/hooks/useFm';
@@ -20,7 +20,7 @@ export interface DriverLicensesWidgetProps {
 
 export const DriverLicensesWidget = memo<DriverLicensesWidgetProps>(({ className }) => {
   const { fm } = useFm();
-  const [driverLicensesActive, setDriverLicensesActive] = useDrawer({ paramName: 'driverLicenses', defaultValue: 'false' });
+  const [driverLicensesActive, setDriverLicensesActive] = useDrawer({ queryParamName: 'driverLicenses', defaultValue: 'false' });
   const [driverLicenseRequirements, setDriverLicenseRequirements] = useSettingDriverLicensesRequirements();
 
   console.log({ russiaDriverLicensesRequirements, driverLicenseRequirements });

@@ -1,13 +1,13 @@
-import { MapComponent } from './pages/map';
+import { ReactNode } from 'react';
 
 import classes from './App.module.scss';
 
-function App() {
+const App = ({ children }: { children: ReactNode }) => {
   return (
     <div className={classes.appContainer}>
-      <MapComponent />
+      {children}
     </div>
   );
-}
+};
 
 export default App;
