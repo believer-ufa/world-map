@@ -6,10 +6,11 @@ import { russiaDriverLicensesRequirements } from '@/data/driverLicensesRequireme
 import { useSettingDriverLicensesRequirements } from '@/hooks/useSettingDriverLicensesRequirements';
 
 import { CheckboxUi } from '@/uikit/Checkbox';
+import { Box } from '@/uikit/Box';
 
 import { CheckboxThemes } from '@/uikit/Checkbox/types';
 import { useDrawer } from '@/hooks/useDrawer';
-import { driverLicensesMessages } from './messages';
+import { driverLicensesMessages as messages } from './messages';
 
 import classes from './DriverLicensesWidget.module.scss';
 
@@ -20,7 +21,7 @@ export interface DriverLicensesWidgetProps {
 
 export const DriverLicensesWidget = memo<DriverLicensesWidgetProps>(({ className }) => {
   const { fm } = useFm();
-  const [driverLicensesActive, setDriverLicensesActive] = useDrawer({ queryParamName: 'driverLicenses', defaultValue: 'false' });
+  const [driverLicensesState, setDriverLicensesActive] = useDrawer({ queryParamName: 'driverLicenses', defaultValue: 'false' });
   const [driverLicenseRequirements, setDriverLicenseRequirements] = useSettingDriverLicensesRequirements();
 
   console.log({ russiaDriverLicensesRequirements, driverLicenseRequirements });
@@ -32,11 +33,27 @@ export const DriverLicensesWidget = memo<DriverLicensesWidgetProps>(({ className
   return (
     <div className={cn(classes.control, className, 'leaflet-control leaflet-bar')}>
       <CheckboxUi
-        checked={driverLicensesActive === 'true'}
-        label={fm(driverLicensesMessages.title)}
+        checked={driverLicensesState === 'true'}
+        label={fm(messages.title)}
         onChange={onClickCheckbox}
         theme={CheckboxThemes.dark}
       />
+      {driverLicensesState === 'true' && (
+        <>
+          <Box className={classes.conventionBlock} alignItems="center">
+            <div className={cn(classes.conventionColor, classes.geneva)} />
+            <div className={classes.conventionTitle}>
+              {fm(messages.genevaConvention)}
+            </div>
+          </Box>
+          <Box className={classes.conventionBlock} alignItems="center">
+            <div className={cn(classes.conventionColor, classes.vienna)} />
+            <div className={classes.conventionTitle}>
+              {fm(messages.viennaConvention)}
+            </div>
+          </Box>
+        </>
+      )}
     </div>
   );
 });
