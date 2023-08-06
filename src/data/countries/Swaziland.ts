@@ -1,8 +1,8 @@
 import { LatLngExpression } from 'leaflet';
 import { countriesNamesMessages } from '../messages';
-import { CountriesKeys } from './types';
+import { CountriesKeys, CountryData } from '../types';
 
-export const Swaziland = {
+export const Swaziland: CountryData = {
   type: 'Feature',
   id: 'SWZ',
   key: CountriesKeys.swaziland,

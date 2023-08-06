@@ -1,8 +1,8 @@
 import { LatLngExpression } from 'leaflet';
 import { countriesNamesMessages } from '../messages';
-import { CountriesKeys } from './types';
+import { CountriesKeys, CountryData } from '../types';
 
-export const UnitedRepublicOfTanzania = {
+export const UnitedRepublicOfTanzania: CountryData = {
   type: 'Feature',
   id: 'TZA',
   key: CountriesKeys.unitedRepublicOfTanzania,

@@ -1,8 +1,8 @@
 import { LatLngExpression } from 'leaflet';
 import { countriesNamesMessages } from '../messages';
-import { CountriesKeys } from './types';
+import { CountriesKeys, CountryData } from '../types';
 
-export const Belize = {
+export const Belize: CountryData = {
   type: 'Feature',
   id: 'BLZ',
   key: CountriesKeys.belize,

@@ -1,8 +1,8 @@
 import { LatLngExpression } from 'leaflet';
 import { countriesNamesMessages } from '../messages';
-import { CountriesKeys } from './types';
+import { CountriesKeys, CountryData } from '../types';
 
-export const Namibia = {
+export const Namibia: CountryData = {
   type: 'Feature',
   id: 'NAM',
   key: CountriesKeys.namibia,

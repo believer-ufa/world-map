@@ -1,8 +1,8 @@
 import { LatLngExpression } from 'leaflet';
 import { countriesNamesMessages } from '../messages';
-import { CountriesKeys } from './types';
+import { CountriesKeys, CountryData } from '../types';
 
-export const Madagascar = {
+export const Madagascar: CountryData = {
   type: 'Feature',
   id: 'MDG',
   key: CountriesKeys.madagascar,

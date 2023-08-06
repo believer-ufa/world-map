@@ -1,8 +1,8 @@
 import { LatLngExpression } from 'leaflet';
 import { countriesNamesMessages } from '../messages';
-import { CountriesKeys } from './types';
+import { CountriesKeys, CountryData } from '../types';
 
-export const TrinidadAndTobago = {
+export const TrinidadAndTobago: CountryData = {
   type: 'Feature',
   id: 'TTO',
   key: CountriesKeys.trinidadAndTobago,

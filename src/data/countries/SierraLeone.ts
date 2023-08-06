@@ -1,8 +1,8 @@
 import { LatLngExpression } from 'leaflet';
 import { countriesNamesMessages } from '../messages';
-import { CountriesKeys } from './types';
+import { CountriesKeys, CountryData } from '../types';
 
-export const SierraLeone = {
+export const SierraLeone: CountryData = {
   type: 'Feature',
   id: 'SLE',
   key: CountriesKeys.sierraLeone,

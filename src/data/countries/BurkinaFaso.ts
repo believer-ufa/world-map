@@ -1,8 +1,8 @@
 import { LatLngExpression } from 'leaflet';
 import { countriesNamesMessages } from '../messages';
-import { CountriesKeys } from './types';
+import { CountriesKeys, CountryData } from '../types';
 
-export const BurkinaFaso = {
+export const BurkinaFaso: CountryData = {
   type: 'Feature',
   id: 'BFA',
   key: CountriesKeys.burkinaFaso,

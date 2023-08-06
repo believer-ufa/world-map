@@ -1,8 +1,8 @@
 import { LatLngExpression } from 'leaflet';
 import { countriesNamesMessages } from '../messages';
-import { CountriesKeys } from './types';
+import { CountriesKeys, CountryData } from '../types';
 
-export const Somaliland = {
+export const Somaliland: CountryData = {
   type: 'Feature',
   id: '-99-somaliland',
   key: CountriesKeys.somaliland,

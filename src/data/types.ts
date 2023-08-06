@@ -1,3 +1,6 @@
+import { MessageDescriptor } from 'react-intl';
+import { LatLngExpression } from 'leaflet';
+
 export enum CountriesKeys {
   afghanistan = 'afghanistan',
   angola = 'angola',
@@ -179,4 +182,22 @@ export enum CountriesKeys {
   southAfrica = 'southAfrica',
   zambia = 'zambia',
   zimbabwe = 'zimbabwe',
+}
+
+export interface CountryData {
+  type: 'Feature';
+  id: string;
+  key: CountriesKeys;
+  properties: {
+    name: MessageDescriptor;
+  }
+  geometry: {
+    type: 'Polygon' | 'MultiPolygon';
+    coordinates: LatLngExpression[] | LatLngExpression[][] | LatLngExpression[][][];
+  }
+}
+
+export interface AllCountries {
+  type: 'FeatureCollection';
+  features: CountryData[];
 }

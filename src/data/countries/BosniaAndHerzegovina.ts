@@ -1,8 +1,8 @@
 import { LatLngExpression } from 'leaflet';
 import { countriesNamesMessages } from '../messages';
-import { CountriesKeys } from './types';
+import { CountriesKeys, CountryData } from '../types';
 
-export const BosniaAndHerzegovina = {
+export const BosniaAndHerzegovina: CountryData = {
   type: 'Feature',
   id: 'BIH',
   key: CountriesKeys.bosniaAndHerzegovina,

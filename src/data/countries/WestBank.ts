@@ -1,8 +1,8 @@
 import { LatLngExpression } from 'leaflet';
 import { countriesNamesMessages } from '../messages';
-import { CountriesKeys } from './types';
+import { CountriesKeys, CountryData } from '../types';
 
-export const WestBank = {
+export const WestBank: CountryData = {
   type: 'Feature',
   id: 'PSE',
   key: CountriesKeys.westBank,

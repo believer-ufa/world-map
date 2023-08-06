@@ -1,8 +1,8 @@
 import { LatLngExpression } from 'leaflet';
 import { countriesNamesMessages } from '../messages';
-import { CountriesKeys } from './types';
+import { CountriesKeys, CountryData } from '../types';
 
-export const Slovenia = {
+export const Slovenia: CountryData = {
   type: 'Feature',
   id: 'SVN',
   key: CountriesKeys.slovenia,

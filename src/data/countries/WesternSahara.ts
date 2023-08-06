@@ -1,8 +1,8 @@
 import { LatLngExpression } from 'leaflet';
 import { countriesNamesMessages } from '../messages';
-import { CountriesKeys } from './types';
+import { CountriesKeys, CountryData } from '../types';
 
-export const WesternSahara = {
+export const WesternSahara: CountryData = {
   type: 'Feature',
   id: 'ESH',
   key: CountriesKeys.westernSahara,

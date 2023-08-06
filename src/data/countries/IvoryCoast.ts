@@ -1,8 +1,8 @@
 import { LatLngExpression } from 'leaflet';
 import { countriesNamesMessages } from '../messages';
-import { CountriesKeys } from './types';
+import { CountriesKeys, CountryData } from '../types';
 
-export const IvoryCoast = {
+export const IvoryCoast: CountryData = {
   type: 'Feature',
   id: 'CIV',
   key: CountriesKeys.ivoryCoast,

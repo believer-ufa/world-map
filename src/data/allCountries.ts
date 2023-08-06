@@ -178,12 +178,13 @@ import { WesternSahara } from './countries/WesternSahara';
 import { Yemen } from './countries/Yemen';
 import { Zambia } from './countries/Zambia';
 import { Zimbabwe } from './countries/Zimbabwe';
+import { AllCountries } from './types';
 
 // TODO: Add Bahrain, Cape Verde, Monaco, San Marino, Seychelles,
 // Andorra, Gibraltar, Hong Kong, Grenada, Western Samoa, Congo, New Caledonia,
 // St Vincent and the Grenadines, St Lucia, Singapore, French Polynesia
 
-export const allCountries = {
+export const allCountries: AllCountries = {
   type: 'FeatureCollection',
   features: [
     Afghanistan,

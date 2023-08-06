@@ -1,8 +1,8 @@
 import { LatLngExpression } from 'leaflet';
 import { countriesNamesMessages } from '../messages';
-import { CountriesKeys } from './types';
+import { CountriesKeys, CountryData } from '../types';
 
-export const PapuaNewGuinea = {
+export const PapuaNewGuinea: CountryData = {
   type: 'Feature',
   id: 'PNG',
   key: CountriesKeys.papuaNewGuinea,

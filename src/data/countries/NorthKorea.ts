@@ -1,8 +1,8 @@
 import { LatLngExpression } from 'leaflet';
 import { countriesNamesMessages } from '../messages';
-import { CountriesKeys } from './types';
+import { CountriesKeys, CountryData } from '../types';
 
-export const NorthKorea = {
+export const NorthKorea: CountryData = {
   type: 'Feature',
   id: 'PRK',
   key: CountriesKeys.northKorea,

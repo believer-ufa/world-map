@@ -1,8 +1,8 @@
 import { LatLngExpression } from 'leaflet';
 import { countriesNamesMessages } from '../messages';
-import { CountriesKeys } from './types';
+import { CountriesKeys, CountryData } from '../types';
 
-export const Nicaragua = {
+export const Nicaragua: CountryData = {
   type: 'Feature',
   id: 'NIC',
   key: CountriesKeys.nicaragua,

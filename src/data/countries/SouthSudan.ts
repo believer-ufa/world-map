@@ -1,8 +1,8 @@
 import { LatLngExpression } from 'leaflet';
 import { countriesNamesMessages } from '../messages';
-import { CountriesKeys } from './types';
+import { CountriesKeys, CountryData } from '../types';
 
-export const SouthSudan = {
+export const SouthSudan: CountryData = {
   type: 'Feature',
   id: 'SSD',
   key: CountriesKeys.southSudan,

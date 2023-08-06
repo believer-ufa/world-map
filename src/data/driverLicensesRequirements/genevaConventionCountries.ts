@@ -1,4 +1,4 @@
-import { CountriesKeys } from '../countries/types';
+import { CountriesKeys } from '../types';
 
 export const GenevaConventionCountries = [
   CountriesKeys.australia,
