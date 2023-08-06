@@ -2,7 +2,7 @@ import { ReactNode, memo } from 'react';
 import cn from 'classnames';
 
 import useFm from '@/hooks/useFm';
-import { <FTName | camelcase>Messages } from './messages';
+import { <FTName | camelcase>Messages as messages } from './messages';
 
 import classes from './[FTName | pascalcase].module.scss';
 
@@ -15,7 +15,7 @@ export const <FTName | pascalcase> = memo<<FTName | pascalcase>Props>(({ classNa
   const { fm } = useFm();
   return (
     <div className={cn(classes.container, className)}>
-      {fm(<FTName | camelcase>Messages.title)}
+      {fm(messages.title)}
     </div>
   );
 });
