@@ -10,6 +10,7 @@ import { CountryData } from '@/data/types';
 import { swapCoords } from '@/helpers/geo/swapCoords';
 
 import classes from './CountryPolygon.module.scss';
+import { useCountryCharacteristics } from './hooks';
 
 export interface CountryPolygonProps {
   className?: string;
@@ -19,17 +20,12 @@ export interface CountryPolygonProps {
 
 export const CountryPolygon = memo<CountryPolygonProps>(({ countryData }) => {
   const { fm } = useFm();
-
-  const countryOptions = useMemo(() => ({
-    color: 'green',
-    weight: 1,
-    opacity: 1,
-  } as PathOptions), []);
+  const countryCharacteristics = useCountryCharacteristics({ countryData });
 
   return (
     <Polygon
       key={countryData.id}
-      pathOptions={countryOptions}
+      pathOptions={countryCharacteristics}
       positions={swapCoords(countryData.geometry.coordinates)}
     >
       <Tooltip

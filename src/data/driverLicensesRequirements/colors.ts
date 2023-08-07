@@ -1,6 +1,6 @@
 import { DriverLicenseConventions } from './types';
 
-export const driverLicensesColors = {
-  [DriverLicenseConventions.Geneva]: 'green',
-  [DriverLicenseConventions.Vienna]: 'yellow',
+export const DriverLicensesColors = {
+  [DriverLicenseConventions.Vienna]: '#25cc81',
+  [DriverLicenseConventions.Geneva]: '#d3f75c',
 };

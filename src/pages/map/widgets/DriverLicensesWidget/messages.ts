@@ -5,12 +5,20 @@ export const driverLicensesMessages = defineMessages({
     id: 'DriverLicenses.title',
     defaultMessage: 'Driver Licenses',
   },
-  genevaConvention: {
-    id: 'DriverLicenses.genevaConvention',
+  viennaConventionTitle: {
+    id: 'DriverLicenses.viennaConventionTitle',
+    defaultMessage: 'Vienna Convention (1968)',
+  },
+  viennaConventionDescription: {
+    id: 'DriverLicenses.viennaConventionDescription',
+    defaultMessage: 'Allows to use national driver license.',
+  },
+  genevaConventionTitle: {
+    id: 'DriverLicenses.genevaConventionTitle',
     defaultMessage: 'Geneva Convention (1949)',
   },
-  viennaConvention: {
-    id: 'DriverLicenses.viennaConvention',
-    defaultMessage: 'Vienna Convention (1968)',
+  genevaConventionDescription: {
+    id: 'DriverLicenses.genevaConventionDescription',
+    defaultMessage: 'Requires international driver license in addition to national to drive cars.',
   },
 });

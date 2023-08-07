@@ -1,15 +1,15 @@
-import { ReactNode, memo, useCallback } from 'react';
+import { ReactNode, memo, useCallback, useMemo } from 'react';
 import cn from 'classnames';
 
 import useFm from '@/hooks/useFm';
-import { russiaDriverLicensesRequirements } from '@/data/driverLicensesRequirements/russia';
-import { useSettingDriverLicensesRequirements } from '@/hooks/useSettingDriverLicensesRequirements';
 
 import { CheckboxUi } from '@/uikit/Checkbox';
 import { Box } from '@/uikit/Box';
 
 import { CheckboxThemes } from '@/uikit/Checkbox/types';
-import { useDrawer } from '@/hooks/useDrawer';
+import { useDriverLicensesOption } from '@/hooks/useDriverLicensesOption';
+import { DriverLicensesColors } from '@/data/driverLicensesRequirements/colors';
+import { DriverLicenseConventions } from '@/data/driverLicensesRequirements/types';
 import { driverLicensesMessages as messages } from './messages';
 
 import classes from './DriverLicensesWidget.module.scss';
@@ -21,14 +21,20 @@ export interface DriverLicensesWidgetProps {
 
 export const DriverLicensesWidget = memo<DriverLicensesWidgetProps>(({ className }) => {
   const { fm } = useFm();
-  const [driverLicensesState, setDriverLicensesActive] = useDrawer({ queryParamName: 'driverLicenses', defaultValue: 'false' });
-  const [driverLicenseRequirements, setDriverLicenseRequirements] = useSettingDriverLicensesRequirements();
-
-  console.log({ russiaDriverLicensesRequirements, driverLicenseRequirements });
+  const [driverLicensesState, setDriverLicensesActive] = useDriverLicensesOption();
+  // const [driverLicenseRequirements, setDriverLicenseRequirements] = useSettingDriverLicensesRequirements();
 
   const onClickCheckbox = useCallback((checked: boolean) => {
     setDriverLicensesActive(checked ? 'true' : 'false');
   }, [setDriverLicensesActive]);
+
+  const genevaConventionBlockStyles = useMemo(() => ({
+    backgroundColor: DriverLicensesColors[DriverLicenseConventions.Geneva],
+  }), []);
+
+  const viennaConventionBlockStyles = useMemo(() => ({
+    backgroundColor: DriverLicensesColors[DriverLicenseConventions.Vienna],
+  }), []);
 
   return (
     <div className={cn(classes.control, className, 'leaflet-control leaflet-bar')}>
@@ -41,16 +47,26 @@ export const DriverLicensesWidget = memo<DriverLicensesWidgetProps>(({ className
       {driverLicensesState === 'true' && (
         <>
           <Box className={classes.conventionBlock} alignItems="center">
-            <div className={cn(classes.conventionColor, classes.geneva)} />
-            <div className={classes.conventionTitle}>
-              {fm(messages.genevaConvention)}
-            </div>
+            <div style={viennaConventionBlockStyles} className={cn(classes.conventionColor, classes.vienna)} />
+            <Box direction="column">
+              <div className={classes.conventionTitle}>
+                {fm(messages.viennaConventionTitle)}
+              </div>
+              <div className={classes.conventionDescription}>
+                {fm(messages.viennaConventionDescription)}
+              </div>
+            </Box>
           </Box>
           <Box className={classes.conventionBlock} alignItems="center">
-            <div className={cn(classes.conventionColor, classes.vienna)} />
-            <div className={classes.conventionTitle}>
-              {fm(messages.viennaConvention)}
-            </div>
+            <div style={genevaConventionBlockStyles} className={cn(classes.conventionColor, classes.geneva)} />
+            <Box direction="column">
+              <div className={classes.conventionTitle}>
+                {fm(messages.genevaConventionTitle)}
+              </div>
+              <div className={classes.conventionDescription}>
+                {fm(messages.genevaConventionDescription)}
+              </div>
+            </Box>
           </Box>
         </>
       )}
