@@ -1,0 +1,1458 @@
+[
+  {
+    "id": "CoordsPanel.latitude",
+    "defaultMessage": "Latitude",
+    "message": "",
+    "files": [
+      "src/uikit/CoordsPanel/messages.ts"
+    ]
+  },
+  {
+    "id": "CoordsPanel.longitude",
+    "defaultMessage": "Longitude",
+    "message": "",
+    "files": [
+      "src/uikit/CoordsPanel/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.afghanistan",
+    "defaultMessage": "Afghanistan",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.albania",
+    "defaultMessage": "Albania",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.algeria",
+    "defaultMessage": "Algeria",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.angola",
+    "defaultMessage": "Angola",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.antarctica",
+    "defaultMessage": "Antarctica",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.argentina",
+    "defaultMessage": "Argentina",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.armenia",
+    "defaultMessage": "Armenia",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.australia",
+    "defaultMessage": "Australia",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.austria",
+    "defaultMessage": "Austria",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.azerbaijan",
+    "defaultMessage": "Azerbaijan",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.bangladesh",
+    "defaultMessage": "Bangladesh",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.belarus",
+    "defaultMessage": "Belarus",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.belgium",
+    "defaultMessage": "Belgium",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.belize",
+    "defaultMessage": "Belize",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.benin",
+    "defaultMessage": "Benin",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.bermuda",
+    "defaultMessage": "Bermuda",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.bhutan",
+    "defaultMessage": "Bhutan",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.bolivia",
+    "defaultMessage": "Bolivia",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.bosniaAndHerzegovina",
+    "defaultMessage": "Bosnia and Herzegovina",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.botswana",
+    "defaultMessage": "Botswana",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.brazil",
+    "defaultMessage": "Brazil",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.brunei",
+    "defaultMessage": "Brunei",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.bulgaria",
+    "defaultMessage": "Bulgaria",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.burkinaFaso",
+    "defaultMessage": "Burkina Faso",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.burundi",
+    "defaultMessage": "Burundi",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.cambodia",
+    "defaultMessage": "Cambodia",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.cameroon",
+    "defaultMessage": "Cameroon",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.canada",
+    "defaultMessage": "Canada",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.centralAfricanRepublic",
+    "defaultMessage": "Central African Republic",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.chad",
+    "defaultMessage": "Chad",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.chile",
+    "defaultMessage": "Chile",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.china",
+    "defaultMessage": "China",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.colombia",
+    "defaultMessage": "Colombia",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.costaRica",
+    "defaultMessage": "Costa Rica",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.croatia",
+    "defaultMessage": "Croatia",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.cuba",
+    "defaultMessage": "Cuba",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.cyprus",
+    "defaultMessage": "Cyprus",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.czechRepublic",
+    "defaultMessage": "Czech Republic",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.democraticRepublicOfTheCongo",
+    "defaultMessage": "Democratic Republic of the Congo",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.denmark",
+    "defaultMessage": "Denmark",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.djibouti",
+    "defaultMessage": "Djibouti",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.dominicanRepublic",
+    "defaultMessage": "Dominican Republic",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.eastTimor",
+    "defaultMessage": "East Timor",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.ecuador",
+    "defaultMessage": "Ecuador",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.egypt",
+    "defaultMessage": "Egypt",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.elSalvador",
+    "defaultMessage": "El Salvador",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.equatorialGuinea",
+    "defaultMessage": "Equatorial Guinea",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.eritrea",
+    "defaultMessage": "Eritrea",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.estonia",
+    "defaultMessage": "Estonia",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.ethiopia",
+    "defaultMessage": "Ethiopia",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.falklandIslands",
+    "defaultMessage": "Falkland Islands",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.fiji",
+    "defaultMessage": "Fiji",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.finland",
+    "defaultMessage": "Finland",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.france",
+    "defaultMessage": "France",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.frenchGuiana",
+    "defaultMessage": "French Guiana",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.frenchSouthernAndAntarcticLands",
+    "defaultMessage": "French Southern and Antarctic Lands",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.gabon",
+    "defaultMessage": "Gabon",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.gambia",
+    "defaultMessage": "Gambia",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.georgia",
+    "defaultMessage": "Georgia",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.germany",
+    "defaultMessage": "Germany",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.ghana",
+    "defaultMessage": "Ghana",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.greece",
+    "defaultMessage": "Greece",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.greenland",
+    "defaultMessage": "Greenland",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.guatemala",
+    "defaultMessage": "Guatemala",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.guinea",
+    "defaultMessage": "Guinea",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.guineaBissau",
+    "defaultMessage": "Guinea Bissau",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.guyana",
+    "defaultMessage": "Guyana",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.haiti",
+    "defaultMessage": "Haiti",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.honduras",
+    "defaultMessage": "Honduras",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.hungary",
+    "defaultMessage": "Hungary",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.iceland",
+    "defaultMessage": "Iceland",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.india",
+    "defaultMessage": "India",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.indonesia",
+    "defaultMessage": "Indonesia",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.iran",
+    "defaultMessage": "Iran",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.iraq",
+    "defaultMessage": "Iraq",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.ireland",
+    "defaultMessage": "Ireland",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.israel",
+    "defaultMessage": "Israel",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.italy",
+    "defaultMessage": "Italy",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.ivoryCoast",
+    "defaultMessage": "Ivory Coast",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.jamaica",
+    "defaultMessage": "Jamaica",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.japan",
+    "defaultMessage": "Japan",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.jordan",
+    "defaultMessage": "Jordan",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.kazakhstan",
+    "defaultMessage": "Kazakhstan",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.kenya",
+    "defaultMessage": "Kenya",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.kosovo",
+    "defaultMessage": "Kosovo",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.kuwait",
+    "defaultMessage": "Kuwait",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.kyrgyzstan",
+    "defaultMessage": "Kyrgyzstan",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.laos",
+    "defaultMessage": "Laos",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.latvia",
+    "defaultMessage": "Latvia",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.lebanon",
+    "defaultMessage": "Lebanon",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.lesotho",
+    "defaultMessage": "Lesotho",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.liberia",
+    "defaultMessage": "Liberia",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.libya",
+    "defaultMessage": "Libya",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.lithuania",
+    "defaultMessage": "Lithuania",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.luxembourg",
+    "defaultMessage": "Luxembourg",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.macedonia",
+    "defaultMessage": "Macedonia",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.madagascar",
+    "defaultMessage": "Madagascar",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.malawi",
+    "defaultMessage": "Malawi",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.malaysia",
+    "defaultMessage": "Malaysia",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.mali",
+    "defaultMessage": "Mali",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.malta",
+    "defaultMessage": "Malta",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.mauritania",
+    "defaultMessage": "Mauritania",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.mexico",
+    "defaultMessage": "Mexico",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.moldova",
+    "defaultMessage": "Moldova",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.mongolia",
+    "defaultMessage": "Mongolia",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.montenegro",
+    "defaultMessage": "Montenegro",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.morocco",
+    "defaultMessage": "Morocco",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.mozambique",
+    "defaultMessage": "Mozambique",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.myanmar",
+    "defaultMessage": "Myanmar",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.namibia",
+    "defaultMessage": "Namibia",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.nepal",
+    "defaultMessage": "Nepal",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.netherlands",
+    "defaultMessage": "Netherlands",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.newCaledonia",
+    "defaultMessage": "New Caledonia",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.newZealand",
+    "defaultMessage": "New Zealand",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.nicaragua",
+    "defaultMessage": "Nicaragua",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.niger",
+    "defaultMessage": "Niger",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.nigeria",
+    "defaultMessage": "Nigeria",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.northKorea",
+    "defaultMessage": "North Korea",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.northernCyprus",
+    "defaultMessage": "Northern Cyprus",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.norway",
+    "defaultMessage": "Norway",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.oman",
+    "defaultMessage": "Oman",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.pakistan",
+    "defaultMessage": "Pakistan",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.panama",
+    "defaultMessage": "Panama",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.papuaNewGuinea",
+    "defaultMessage": "Papua New Guinea",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.paraguay",
+    "defaultMessage": "Paraguay",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.peru",
+    "defaultMessage": "Peru",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.philippines",
+    "defaultMessage": "Philippines",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.poland",
+    "defaultMessage": "Poland",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.portugal",
+    "defaultMessage": "Portugal",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.puertoRico",
+    "defaultMessage": "Puerto Rico",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.qatar",
+    "defaultMessage": "Qatar",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.republicOfSerbia",
+    "defaultMessage": "Republic of Serbia",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.republicOfTheCongo",
+    "defaultMessage": "Republic of the Congo",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.romania",
+    "defaultMessage": "Romania",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.russia",
+    "defaultMessage": "Russia",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.rwanda",
+    "defaultMessage": "Rwanda",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.saudiArabia",
+    "defaultMessage": "Saudi Arabia",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.senegal",
+    "defaultMessage": "Senegal",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.sierraLeone",
+    "defaultMessage": "Sierra Leone",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.slovakia",
+    "defaultMessage": "Slovakia",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.slovenia",
+    "defaultMessage": "Slovenia",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.solomonIslands",
+    "defaultMessage": "Solomon Islands",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.somalia",
+    "defaultMessage": "Somalia",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.somaliland",
+    "defaultMessage": "Somaliland",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.southAfrica",
+    "defaultMessage": "South Africa",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.southKorea",
+    "defaultMessage": "South Korea",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.southSudan",
+    "defaultMessage": "South Sudan",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.spain",
+    "defaultMessage": "Spain",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.sriLanka",
+    "defaultMessage": "Sri Lanka",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.sudan",
+    "defaultMessage": "Sudan",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.suriname",
+    "defaultMessage": "Suriname",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.swaziland",
+    "defaultMessage": "Swaziland",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.sweden",
+    "defaultMessage": "Sweden",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.switzerland",
+    "defaultMessage": "Switzerland",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.syria",
+    "defaultMessage": "Syria",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.taiwan",
+    "defaultMessage": "Taiwan",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.tajikistan",
+    "defaultMessage": "Tajikistan",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.thailand",
+    "defaultMessage": "Thailand",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.theBahamas",
+    "defaultMessage": "The Bahamas",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.togo",
+    "defaultMessage": "Togo",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.trinidadAndTobago",
+    "defaultMessage": "Trinidad and Tobago",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.tunisia",
+    "defaultMessage": "Tunisia",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.turkey",
+    "defaultMessage": "Turkey",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.turkmenistan",
+    "defaultMessage": "Turkmenistan",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.uganda",
+    "defaultMessage": "Uganda",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.ukraine",
+    "defaultMessage": "Ukraine",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.unitedArabEmirates",
+    "defaultMessage": "United Arab Emirates",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.unitedKingdom",
+    "defaultMessage": "United Kingdom",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.unitedRepublicOfTanzania",
+    "defaultMessage": "United Republic of Tanzania",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.unitedStatesOfAmerica",
+    "defaultMessage": "United States of America",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.uruguay",
+    "defaultMessage": "Uruguay",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.uzbekistan",
+    "defaultMessage": "Uzbekistan",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.vanuatu",
+    "defaultMessage": "Vanuatu",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.venezuela",
+    "defaultMessage": "Venezuela",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.vietnam",
+    "defaultMessage": "Vietnam",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.westBank",
+    "defaultMessage": "West Bank",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.westernSahara",
+    "defaultMessage": "Western Sahara",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.yemen",
+    "defaultMessage": "Yemen",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.zambia",
+    "defaultMessage": "Zambia",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  },
+  {
+    "id": "CountriesNames.zimbabwe",
+    "defaultMessage": "Zimbabwe",
+    "message": "",
+    "files": [
+      "src/data/messages.ts"
+    ]
+  }
+]
