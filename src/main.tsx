@@ -19,6 +19,10 @@ const router = createBrowserRouter([
     path: '/',
     element: <MapPage />,
   },
+  {
+    path: '/world-map',
+    element: <MapPage />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
