@@ -13,7 +13,7 @@ export interface CoordinatesWidgetProps {
   map: Map;
 }
 
-export const CoordinatesWidget = memo<CoordinatesWidgetProps>(({ className, map }) => {
+export const CoordinatesWidget = memo<CoordinatesWidgetProps>(({ map }) => {
   const { fm } = useFm();
   const [coords, setCoords] = useState(() => map.getCenter());
 

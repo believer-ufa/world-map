@@ -9,9 +9,11 @@ async function makeCountriesNamesEnum() {
 
   allCountries.features.forEach((feature) => {
     const countryNameData = feature.properties.name;
-    const countryName = typeof countryNameData === 'object' ? countryNameData.defaultMessage : countryNameData;
+    const countryName = (typeof countryNameData === 'object' ? countryNameData.defaultMessage : countryNameData) ?? '';
 
-    finalMessagesFileContent += `\n  ${camelCase(countryName)} = '${camelCase(countryName)}',`;
+    if (typeof countryName === 'string') {
+      finalMessagesFileContent += `\n  ${camelCase(countryName)} = '${camelCase(countryName)}',`;
+    }
   });
 
   finalMessagesFileContent += '\n}\n';

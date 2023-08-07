@@ -1,6 +1,5 @@
-import { ReactNode, memo, useMemo } from 'react';
+import { ReactNode, memo } from 'react';
 import { Polygon, Tooltip } from 'react-leaflet';
-import { PathOptions } from 'leaflet';
 
 // import cn from 'classnames';
 

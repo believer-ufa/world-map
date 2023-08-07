@@ -13,10 +13,12 @@ async function makeCountriesNamesList() {
     const countryNameData = feature.properties.name;
     const countryName = typeof countryNameData === 'object' ? countryNameData.defaultMessage : countryNameData;
 
-    finalMessagesFileContent += `\n  ${camelCase(countryName)}: {
+    if (typeof countryName === 'string') {
+      finalMessagesFileContent += `\n  ${camelCase(countryName)}: {
     id: 'CountriesNames.${camelCase(countryName)}',
     defaultMessage: '${countryName}',
   },`;
+    }
   });
 
   finalMessagesFileContent += '\n});\n';
