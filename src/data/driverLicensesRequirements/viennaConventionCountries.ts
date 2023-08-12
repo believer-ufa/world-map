@@ -60,6 +60,7 @@ export const ViennaConventionCountries = [
   CountriesKeys.portugal,
   CountriesKeys.southKorea,
   CountriesKeys.romania,
+  CountriesKeys.russia,
   // CountriesKeys.sanMarino,
   CountriesKeys.saudiArabia,
   // CountriesKeys.seychelles,
