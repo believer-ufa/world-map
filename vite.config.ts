@@ -1,12 +1,10 @@
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-
 import { fileURLToPath, URL } from 'url';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/world-map',
   plugins: [react()],
   resolve: {
     alias: [
