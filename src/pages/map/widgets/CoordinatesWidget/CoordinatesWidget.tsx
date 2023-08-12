@@ -30,7 +30,7 @@ export const CoordinatesWidget = memo<CoordinatesWidgetProps>(({ map }) => {
 
   return (
     <div className={cn(classes.control, 'leaflet-control leaflet-bar')}>
-      {fm(coordinatesWidgetMessages.latitude)}: {' '} {coords.lat.toFixed(4)},
+      {fm(coordinatesWidgetMessages.latitude)}: {' '} {coords.lat.toFixed(4)},&nbsp;
       {fm(coordinatesWidgetMessages.longitude)}: {' '} {coords.lng.toFixed(4)}
     </div>
   );
