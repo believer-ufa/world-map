@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable import/no-dynamic-require */
 /* eslint-disable global-require */
 
 type callbackFunc = (options?: object) => Promise<void> | undefined;
