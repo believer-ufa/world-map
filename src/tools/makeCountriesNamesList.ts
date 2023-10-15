@@ -7,7 +7,7 @@ import { allCountries } from '../data/allCountries';
 async function makeCountriesNamesList() {
   let finalMessagesFileContent = 'import { defineMessages } from \'react-intl\';';
   finalMessagesFileContent += '\n\n';
-  finalMessagesFileContent += 'export const countriesNames = defineMessages({';
+  finalMessagesFileContent += 'export const countriesNamesMessages = defineMessages({';
 
   allCountries.features.forEach((feature) => {
     const countryNameData = feature.properties.name;
