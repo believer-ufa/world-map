@@ -20,7 +20,7 @@ enum CSVColumnsIndexes {
   source = 12,
 }
 
-export const ColumnTitles: Record<CSVColumnsIndexes, string> = {
+export const ColumnCodes: Record<CSVColumnsIndexes, string> = {
   [CSVColumnsIndexes.iso3_code]: 'iso3_code',
   [CSVColumnsIndexes.country]: 'country',
   [CSVColumnsIndexes.region]: 'region',
@@ -42,16 +42,23 @@ async function importIntentionalHomicide() {
     driver: sqlite3.Database,
   });
 
+  await db.exec('DROP TABLE migration');
   await db.exec(`
-    CREATE TABLE migration
+    CREATE TABLE unodc_intentional_homicide_2023_06
     (
-      year_month       VARCHAR(10),
-      month_of_release VARCHAR(10),
-      passenger_type   VARCHAR(50),
-      direction        VARCHAR(20),
-      sex              VARCHAR(10),
-      age              VARCHAR(50),
-      estimate         INT
+      ${ColumnCodes[CSVColumnsIndexes.iso3_code]} VARCHAR(20),
+      ${ColumnCodes[CSVColumnsIndexes.country]} VARCHAR(100),
+      ${ColumnCodes[CSVColumnsIndexes.region]} VARCHAR(50),
+      ${ColumnCodes[CSVColumnsIndexes.subregion]} VARCHAR(50),
+      ${ColumnCodes[CSVColumnsIndexes.indicator]} VARCHAR(100),
+      ${ColumnCodes[CSVColumnsIndexes.dimension]} VARCHAR(50),
+      ${ColumnCodes[CSVColumnsIndexes.category]} VARCHAR(80),
+      ${ColumnCodes[CSVColumnsIndexes.sex]} VARCHAR(10),
+      ${ColumnCodes[CSVColumnsIndexes.age]} VARCHAR(20),
+      ${ColumnCodes[CSVColumnsIndexes.year]} INT,
+      ${ColumnCodes[CSVColumnsIndexes.unitOfMeasurement]} VARCHAR(50),
+      ${ColumnCodes[CSVColumnsIndexes.value]} VARCHAR(50),
+      ${ColumnCodes[CSVColumnsIndexes.source]} VARCHAR(100),
     )
   `);
 
@@ -63,7 +70,7 @@ async function importIntentionalHomicide() {
       const dataObject = row.reduce((obj: any, value: any, idx: CSVColumnsIndexes) => {
         return {
           ...obj,
-          [ColumnTitles[idx]]: value,
+          [ColumnCodes[idx]]: value,
         };
       }, {});
 
