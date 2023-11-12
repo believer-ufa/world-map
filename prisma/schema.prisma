@@ -1,0 +1,28 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model unodc_intentional_homicide_2023_06 {
+  id Int @id @default(autoincrement())
+  iso3_code String @unique
+  country String
+  region String
+  subregion String
+  indicator String
+  dimension String
+  category String
+  sex String
+  age String
+  year Int
+  unitOfMeasurement String
+  value String
+  source String
+}

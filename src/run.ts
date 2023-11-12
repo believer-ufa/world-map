@@ -11,21 +11,21 @@ const format = (time: Date): string => {
   return time.toTimeString().replace(/.*(\d{2}:\d{2}:\d{2}).*/, '$1');
 };
 
-const run = (fn: { default: callbackFunc } | callbackFunc, options?: object) => {
+const run = async (fn: { default: callbackFunc } | callbackFunc) => {
   const task: callbackFunc = (typeof fn === 'function' ? fn : fn.default);
   const start = new Date();
   console.info(
-    `[${format(start)}] Starting '${task.name}${options ? `(${JSON.stringify(options)})` : ''}'...`,
+    `[${format(start)}] Starting '${task.name}'...`,
   );
 
-  const taskRunResult = task(options);
+  const taskRunResult = task();
 
   if (taskRunResult) {
-    return taskRunResult.then((resolution) => {
+    return taskRunResult.then(async (resolution) => {
       const end = new Date();
       const time = end.getTime() - start.getTime();
       console.info(
-        `[${format(end)}] Finished '${task.name}${options ? `(${JSON.stringify(options)})` : ''}' after ${time} ms`,
+        `[${format(end)}] Finished '${task.name}' after ${time} ms`,
       );
       return resolution;
     });

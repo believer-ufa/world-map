@@ -1,8 +1,8 @@
 import fs from 'fs';
 
+import { PrismaClient } from '@prisma/client';
+
 import { parse } from 'csv-parse';
-import sqlite3 from 'sqlite3';
-import { open } from 'sqlite';
 
 enum CSVColumnsIndexes {
   iso3_code = 0,
@@ -37,36 +37,38 @@ export const ColumnCodes: Record<CSVColumnsIndexes, string> = {
 };
 
 async function importIntentionalHomicide() {
-  const db = await open({
-    filename: './src/data/database.db',
-    driver: sqlite3.Database,
-  });
+  const prisma = new PrismaClient();
 
-  await db.exec('DROP TABLE IF EXISTS unodc_intentional_homicide_2023_06;');
-  await db.exec(`
-    CREATE TABLE unodc_intentional_homicide_2023_06
-    (
-      ${ColumnCodes[CSVColumnsIndexes.iso3_code]} VARCHAR(20) PRIMARY KEY,
-      ${ColumnCodes[CSVColumnsIndexes.country]} VARCHAR(100),
-      ${ColumnCodes[CSVColumnsIndexes.region]} VARCHAR(50),
-      ${ColumnCodes[CSVColumnsIndexes.subregion]} VARCHAR(50),
-      ${ColumnCodes[CSVColumnsIndexes.indicator]} VARCHAR(100),
-      ${ColumnCodes[CSVColumnsIndexes.dimension]} VARCHAR(50),
-      ${ColumnCodes[CSVColumnsIndexes.category]} VARCHAR(80),
-      ${ColumnCodes[CSVColumnsIndexes.sex]} VARCHAR(10),
-      ${ColumnCodes[CSVColumnsIndexes.age]} VARCHAR(20),
-      ${ColumnCodes[CSVColumnsIndexes.year]} INT,
-      ${ColumnCodes[CSVColumnsIndexes.unitOfMeasurement]} VARCHAR(50),
-      ${ColumnCodes[CSVColumnsIndexes.value]} VARCHAR(50),
-      ${ColumnCodes[CSVColumnsIndexes.source]} VARCHAR(100)
-    );
-  `);
+  // const db = await open({
+  //   filename: './src/data/database.db',
+  //   driver: sqlite3.Database,
+  // });
 
-  await db.close();
+  // await db.exec('DROP TABLE IF EXISTS unodc_intentional_homicide_2023_06;');
+  // await db.exec(`
+  //   CREATE TABLE unodc_intentional_homicide_2023_06
+  //   (
+  //     ${ColumnCodes[CSVColumnsIndexes.iso3_code]} VARCHAR(20) PRIMARY KEY,
+  //     ${ColumnCodes[CSVColumnsIndexes.country]} VARCHAR(100),
+  //     ${ColumnCodes[CSVColumnsIndexes.region]} VARCHAR(50),
+  //     ${ColumnCodes[CSVColumnsIndexes.subregion]} VARCHAR(50),
+  //     ${ColumnCodes[CSVColumnsIndexes.indicator]} VARCHAR(100),
+  //     ${ColumnCodes[CSVColumnsIndexes.dimension]} VARCHAR(50),
+  //     ${ColumnCodes[CSVColumnsIndexes.category]} VARCHAR(80),
+  //     ${ColumnCodes[CSVColumnsIndexes.sex]} VARCHAR(10),
+  //     ${ColumnCodes[CSVColumnsIndexes.age]} VARCHAR(20),
+  //     ${ColumnCodes[CSVColumnsIndexes.year]} INT,
+  //     ${ColumnCodes[CSVColumnsIndexes.unitOfMeasurement]} VARCHAR(50),
+  //     ${ColumnCodes[CSVColumnsIndexes.value]} VARCHAR(50),
+  //     ${ColumnCodes[CSVColumnsIndexes.source]} VARCHAR(100)
+  //   );
+  // `);
+
+  // await db.close();
 
   fs.createReadStream('./src/data/unodc/intentional_homicide/2023.06/data_cts_intentional_homicide.csv')
     .pipe(parse({ delimiter: ';', from_line: 2 }))
-    .on('data', (row: String[]) => {
+    .on('data', async (row: String[]) => {
       const dataObject = row.reduce((obj: any, value: any, idx: CSVColumnsIndexes) => {
         return {
           ...obj,
@@ -75,11 +77,19 @@ async function importIntentionalHomicide() {
       }, {});
 
       console.info(dataObject);
+
+      const newUser = await prisma.unodc_intentional_homicide_2023_06.create({
+        data: {
+          age: dataObject.age,
+        },
+      });
     })
-    .on('end', () => {
+    .on('end', async () => {
       console.info('finished');
+      await prisma.$disconnect();
     })
-    .on('error', (error) => {
+    .on('error', async (error) => {
+      await prisma.$disconnect();
       console.error(error.message);
     });
 }
