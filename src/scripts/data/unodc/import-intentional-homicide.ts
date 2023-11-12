@@ -42,11 +42,11 @@ async function importIntentionalHomicide() {
     driver: sqlite3.Database,
   });
 
-  await db.exec('DROP TABLE migration');
+  await db.exec('DROP TABLE IF EXISTS unodc_intentional_homicide_2023_06;');
   await db.exec(`
     CREATE TABLE unodc_intentional_homicide_2023_06
     (
-      ${ColumnCodes[CSVColumnsIndexes.iso3_code]} VARCHAR(20),
+      ${ColumnCodes[CSVColumnsIndexes.iso3_code]} VARCHAR(20) PRIMARY KEY,
       ${ColumnCodes[CSVColumnsIndexes.country]} VARCHAR(100),
       ${ColumnCodes[CSVColumnsIndexes.region]} VARCHAR(50),
       ${ColumnCodes[CSVColumnsIndexes.subregion]} VARCHAR(50),
@@ -58,8 +58,8 @@ async function importIntentionalHomicide() {
       ${ColumnCodes[CSVColumnsIndexes.year]} INT,
       ${ColumnCodes[CSVColumnsIndexes.unitOfMeasurement]} VARCHAR(50),
       ${ColumnCodes[CSVColumnsIndexes.value]} VARCHAR(50),
-      ${ColumnCodes[CSVColumnsIndexes.source]} VARCHAR(100),
-    )
+      ${ColumnCodes[CSVColumnsIndexes.source]} VARCHAR(100)
+    );
   `);
 
   await db.close();
@@ -80,7 +80,7 @@ async function importIntentionalHomicide() {
       console.info('finished');
     })
     .on('error', (error) => {
-      console.info(error.message);
+      console.error(error.message);
     });
 }
 
