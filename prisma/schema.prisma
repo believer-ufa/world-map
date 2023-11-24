@@ -12,7 +12,7 @@ datasource db {
 
 model unodc_intentional_homicide_2023_06 {
   id Int @id @default(autoincrement())
-  iso3_code String @unique
+  iso3_code String
   country String
   region String
   subregion String
@@ -25,4 +25,16 @@ model unodc_intentional_homicide_2023_06 {
   unitOfMeasurement String
   value String
   source String
+
+  @@index([iso3_code])
+  @@index([country])
+  @@index([region])
+  @@index([subregion])
+  @@index([indicator])
+  @@index([dimension])
+  @@index([category])
+  @@index([sex])
+  @@index([age])
+  @@index([year])
+  @@index([unitOfMeasurement])
 }

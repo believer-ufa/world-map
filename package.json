@@ -12,6 +12,7 @@
     "extractMessages": "ts-node --esm ./src/run.ts ./tools/extractMessages.ts",
     "makeCountriesNamesList": "ts-node --esm ./src/run.ts ./tools/makeCountriesNamesList.ts",
     "makeCountriesNamesEnum": "ts-node --esm ./src/run.ts ./tools/makeCountriesNamesEnum.ts",
+    "prisma.migrate": "npx prisma migrate dev",
     "unodc.import-intentional-homicide": "ts-node --esm ./src/run.ts ./scripts/data/unodc/import-intentional-homicide.ts",
     "extract": "formatjs extract"
   },

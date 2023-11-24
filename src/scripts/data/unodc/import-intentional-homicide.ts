@@ -39,6 +39,10 @@ export const ColumnCodes: Record<CSVColumnsIndexes, string> = {
 async function importIntentionalHomicide() {
   const prisma = new PrismaClient();
 
+  process.on('SIGINT', async () => {
+    await prisma.$disconnect();
+  });
+
   // const db = await open({
   //   filename: './src/data/database.db',
   //   driver: sqlite3.Database,
@@ -64,34 +68,55 @@ async function importIntentionalHomicide() {
   //   );
   // `);
 
-  // await db.close();
+  try {
+    await prisma.unodc_intentional_homicide_2023_06.deleteMany();
 
-  fs.createReadStream('./src/data/unodc/intentional_homicide/2023.06/data_cts_intentional_homicide.csv')
-    .pipe(parse({ delimiter: ';', from_line: 2 }))
-    .on('data', async (row: String[]) => {
-      const dataObject = row.reduce((obj: any, value: any, idx: CSVColumnsIndexes) => {
-        return {
-          ...obj,
-          [ColumnCodes[idx]]: value,
-        };
-      }, {});
+    fs.createReadStream('./src/data/unodc/intentional_homicide/2023.06/data_cts_intentional_homicide.short.csv')
+      .pipe(parse({ delimiter: ';', from_line: 2 }))
+      .on('data', async (row: String[]) => {
+        const dataObject = row.reduce((obj: any, value: any, idx: CSVColumnsIndexes) => {
+          return {
+            ...obj,
+            [ColumnCodes[idx]]: value,
+          };
+        }, {});
 
-      console.info(dataObject);
+        console.info(dataObject);
 
-      const newUser = await prisma.unodc_intentional_homicide_2023_06.create({
-        data: {
-          age: dataObject.age,
-        },
+        const newRecord = await prisma.unodc_intentional_homicide_2023_06.create({
+          data: {
+            iso3_code: dataObject.iso3_code,
+            country: dataObject.country,
+            region: dataObject.region,
+            subregion: dataObject.subregion,
+            indicator: dataObject.indicator,
+            dimension: dataObject.dimension,
+            category: dataObject.category,
+            sex: dataObject.sex,
+            age: dataObject.age,
+            year: parseInt(dataObject.year, 10),
+            unitOfMeasurement: dataObject.unitOfMeasurement,
+            value: dataObject.value,
+            source: dataObject.source,
+          },
+        });
+
+        console.log({ newRecord });
+      })
+      .on('end', async () => {
+        console.info('finished');
+        await prisma.$disconnect();
+      })
+      .on('error', async (error) => {
+        await prisma.$disconnect();
+        console.error(error.message);
       });
-    })
-    .on('end', async () => {
-      console.info('finished');
-      await prisma.$disconnect();
-    })
-    .on('error', async (error) => {
-      await prisma.$disconnect();
-      console.error(error.message);
-    });
+  } catch (e) {
+    console.error(e);
+    await prisma.$disconnect();
+  } finally {
+    await prisma.$disconnect();
+  }
 }
 
 export default importIntentionalHomicide;
