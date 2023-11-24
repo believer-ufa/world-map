@@ -43,6 +43,8 @@ async function importIntentionalHomicide() {
     await prisma.$disconnect();
   });
 
+  const iso3CodesProcessed: string[] = [];
+
   // const db = await open({
   //   filename: './src/data/database.db',
   //   driver: sqlite3.Database,
@@ -70,6 +72,7 @@ async function importIntentionalHomicide() {
 
   try {
     await prisma.unodc_intentional_homicide_2023_06.deleteMany();
+    await prisma.$executeRaw`DELETE FROM iso3_codes`;
 
     fs.createReadStream('./src/data/unodc/intentional_homicide/2023.06/data_cts_intentional_homicide.short.csv')
       .pipe(parse({ delimiter: ';', from_line: 2 }))
@@ -81,7 +84,10 @@ async function importIntentionalHomicide() {
           };
         }, {});
 
-        console.info(dataObject);
+        if (dataObject.iso3_code && !iso3CodesProcessed.includes(dataObject.iso3_code)) {
+          await prisma.iso3_codes.create({ data: { code: dataObject.iso3_code } });
+          iso3CodesProcessed.push(dataObject.iso3_code);
+        }
 
         const newRecord = await prisma.unodc_intentional_homicide_2023_06.create({
           data: {

@@ -12,6 +12,7 @@ datasource db {
 
 model unodc_intentional_homicide_2023_06 {
   id Int @id @default(autoincrement())
+  iso iso3_codes @relation(fields: [iso3_code], references: [code])
   iso3_code String
   country String
   region String
@@ -37,4 +38,9 @@ model unodc_intentional_homicide_2023_06 {
   @@index([age])
   @@index([year])
   @@index([unitOfMeasurement])
+}
+
+model iso3_codes {
+  code     String  @id
+  homicides_2023_06 unodc_intentional_homicide_2023_06[]
 }
